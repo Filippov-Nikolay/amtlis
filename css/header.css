@@ -14,7 +14,7 @@
     padding-bottom: 20px;
 }
 .burger {
-    
+    cursor: pointer;
 }
 .burger:hover .burger__span {
     background-color: var(--bg-color-element);
@@ -32,8 +32,56 @@
 .burger__span:not(:last-child) {
     margin-bottom: 3px;
 }
-.burger__span:hover {
-    cursor: pointer;
-}
 .logo {
+}
+.header__form {
+    display: flex;
+
+    margin: 0 auto;
+}
+.search-form {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0 auto;
+    padding: 5px 30px;
+
+    width: 400px;
+
+    border-radius: 50px;
+    border: 0.5px solid var(--bg-color-border);
+}
+.search-form__input {
+    width: 100%;
+    color: var(--color-text);
+}
+.search-form__btn {
+    padding: 3px;
+    border-radius: 50px;
+
+    transition: all .3s ease;
+}
+.search-form__btn:hover {
+    background: rgba(217, 217, 217, 0.10);
+}
+.search-form__svg {
+    display: block;
+}
+.input-voice {
+    padding: 13px 16px;
+    border-radius: 50px;
+    background: rgba(217, 217, 217, 0.10);
+
+    transition: all .5s ease;
+}
+.input-voice:hover {
+    background: rgba(217, 217, 217, 0.20);
+}
+.header__input-voice {
+    margin-left: 25px;
+}
+.input-voice__svg {
+    display: block;
 }
