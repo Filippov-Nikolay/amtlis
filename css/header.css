@@ -1,0 +1,39 @@
+.header {
+}
+.header__burger {
+    margin-right: 25px;
+}
+.container {
+}
+.nav {
+    display: flex;
+
+    align-items: center;
+
+    padding-top: 35px;
+    padding-bottom: 20px;
+}
+.burger {
+    
+}
+.burger:hover .burger__span {
+    background-color: var(--bg-color-element);
+}
+.burger__span {
+    display: block;
+
+    width: 20px;
+    height: 1px;
+
+    background-color: var(--color-text);
+
+    transition: all .3s ease;
+}
+.burger__span:not(:last-child) {
+    margin-bottom: 3px;
+}
+.burger__span:hover {
+    cursor: pointer;
+}
+.logo {
+}
