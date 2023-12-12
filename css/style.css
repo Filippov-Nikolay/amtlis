@@ -5,6 +5,7 @@
 /* next import */
 
 @import url('normalize.css');
+@import url('header.css');
 
 :root {
     /* main */
@@ -18,22 +19,25 @@
     
     /* svg path */
     --color-stroke-icon: #fff;
+
+    --bg-color-element: #6486DB;
 }
 
 body {
-    
+    font-family: 'Jura', 'Inter';
     font-size: 18px;
     color: #fff;
+    background-color: var(--bg-color);
 }
 
 .container {
     margin: 0 auto;
-    width: 1820px;
+    max-width: 95%;
 }
 
 svg {
 
 }
 path {
-    stroke: var(--color-stroke-icon);
+    /* stroke: var(--color-stroke-icon); */
 }
