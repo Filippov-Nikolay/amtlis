@@ -1,0 +1,39 @@
+/* fonts */
+@import url(https://fonts.googleapis.com/css?family=Jura:300,regular,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+
+/* next import */
+
+@import url('normalize.css');
+
+:root {
+    /* main */
+    --bg-color: #000;
+    --color-text: #fff;
+
+    /* button */
+    --bg-button: var(--bg-color);
+    --bg-button-hover: #6486DB;
+    --color-text-button-hover: #000;
+    
+    /* svg path */
+    --color-stroke-icon: #fff;
+}
+
+body {
+    
+    font-size: 18px;
+    color: #fff;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1820px;
+}
+
+svg {
+
+}
+path {
+    stroke: var(--color-stroke-icon);
+}
