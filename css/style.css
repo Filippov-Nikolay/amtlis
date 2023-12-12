@@ -16,6 +16,8 @@
     --bg-button: var(--bg-color);
     --bg-button-hover: #6486DB;
     --color-text-button-hover: #000;
+
+    --bg-color-border: #ACACAC;
     
     /* svg path */
     --color-stroke-icon: #fff;
