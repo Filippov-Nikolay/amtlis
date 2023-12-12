@@ -1,1 +1,1 @@
-an unfinished project made by Shvets and Philippov!
+an unfinished project made by Shvets and Filippov!
