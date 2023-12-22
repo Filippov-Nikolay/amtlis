@@ -1,5 +1,5 @@
-// HEADER-MENU
 $(document).ready(function() {
+    // HEADER-MENU
     function showMenu () {
         $(".left-bar").show();
         $(".left-bar").css("transform", "translateX(0)");
@@ -11,7 +11,6 @@ $(document).ready(function() {
             $(".left-bar").hide();
         }, 500);
     }
-
 
     let nextClick = true;
 
@@ -32,5 +31,7 @@ $(document).ready(function() {
             $(".left-bar").hasClass("show-bar") ? showMenu() : hideMenu();
         }
     });
-});
 
+
+    // SLICK SLIDER
+});
