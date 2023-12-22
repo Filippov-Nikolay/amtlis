@@ -10,7 +10,9 @@
 :root {
     /* main */
     --bg-color: #000;
+    --bg-color-revers: #fff;
     --color-text: #fff;
+    --color-text-hover: #6486DB;
 
     /* button */
     --bg-button: var(--bg-color);
@@ -21,11 +23,27 @@
     
     /* svg path */
     --color-stroke-icon: #fff;
-    --color-stroke-svg-hover: #6486DB;
+    --color-stroke-svg-hover: var(--color-text-hover);
     --bg-color-element: #6486DB;
 }
 
+/* SCROLL */
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+    border-left: 2px solid var(--bg-button);
+}
+::-webkit-scrollbar-thumb {
+    background-color: #6486DB;
+    border-radius: 10px;
+}
+
 body {
+    position: relative;
+
     font-family: 'Jura', 'Inter';
     font-size: 18px;
     color: #fff;
@@ -42,4 +60,22 @@ svg {
 }
 path {
     /* stroke: var(--color-stroke-icon); */
+}
+
+/* Animation when pressed */
+@keyframes animateClickBurger {
+    0% {
+        opacity: 1;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+
+    80% {
+        box-shadow: inset 0 0 0 2px var(--color-text-hover);
+        opacity: 0.1;
+    }
+
+    100% {
+        opacity: 0;
+        box-shadow: inset 0 0 0 2px var(--color-text-hover);
+    }
 }
