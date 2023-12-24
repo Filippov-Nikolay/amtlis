@@ -3,6 +3,8 @@
     width: 100%;
     height: 100px;
     z-index: 2;
+
+    background-color: var(--bg-color);
 }
 .header__burger {
     margin-right: 25px;
