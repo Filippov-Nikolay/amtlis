@@ -1,0 +1,205 @@
+
+/* SLICK SLIDER */
+/* Слайдер */
+.slick-slider {
+}
+/* Слайдер запущен */
+.slick-slider.slick-initialized {
+    display: flex;
+    align-items: center;
+}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.slick-list {}
+/* Лента слайдов */
+.slider-nav .slick-track {}
+.slick-track {}
+/* Слайд */
+.slick-slide{}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.slick-arrow {
+    width: 25px;
+    height: 25px;
+    font-size: 0;
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev {
+    margin-right: 20px;
+    background: url('../img/arrow.svg') no-repeat center top/cover;
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+    margin-left: 20px;
+    background: url('../img/arrow.svg') no-repeat center top/cover;
+    transform: rotate(180deg);
+}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+/* Точки (булиты) */
+.slick-dots{}
+.slick-dots li{}
+/* Активная точка */
+.slick-dots li.slick-active{}
+/* Элемент точки */
+.slick-dots li button{}
+
+
+
+
+.section {
+}
+.banner {
+}
+.banner__content {
+    position: relative;
+}
+.banner__info {
+    position: absolute;
+    z-index: 2;
+
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(90deg, rgba(6,6,6,1) 40%, rgba(0,212,255,0) 100%);
+
+    text-transform: uppercase;
+}
+.banner__inner {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 auto;
+
+    width: 95%;
+    height: 100%;
+}
+.banner__title {
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+.banner__wrapper {
+    display: flex;
+
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+.canvas__btn-wrapper {
+}
+.canvas__btn-wrapper::after {
+    content: '';
+
+    position: absolute;
+    bottom: 20px;
+
+    display: inline-block;
+    
+    margin-top: 50px;
+    margin-left: -10px;
+
+    width: 340px;
+    height: 1px;
+
+    opacity: 0.5;
+
+    background-color: var(--color-button-border);
+}
+#canvas__btn {
+    position: absolute;
+    bottom: 75px;
+    opacity: 0.5;
+}
+.banner__btn {
+    padding: 15px 60px;
+
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+
+    border: 1px solid var(--color-button-border);
+    border-radius: 10px;
+
+    transition: all .5s ease;
+
+    text-transform: uppercase;
+}
+.banner__btn:hover {
+    background-color: var(--bg-button-hover);
+}
+.banner__video-info {
+    display: flex;
+    align-items: center;
+
+    margin-left: 40px;
+}
+.video-info__item {
+    margin-left: 5px;
+
+    display: flex;
+    align-items: center;
+}
+.video-info__item::before {
+    content: '';
+
+    display: block;
+
+    margin-right: 5px;
+
+    width: 5px;
+    height: 5px;
+
+    background-color: var(--bg-color-revers);
+
+    border-radius: 50%;
+}
+.banner__video-name {
+}
+.banner__bg {
+}
+.slider-for {
+}
+.slider-for__img {
+    max-height: 450px;
+}
+.slider-for__img img {
+    width: 100%;
+}
+.banner__about {
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    width: 50%;
+    z-index: 2;
+}
+/* .banner__item .slick-slide {
+    width: 250px;
+}
+.banner__about .slider-nav {
+    display: flex;
+} */
+.slick-list.draggable {
+    /* padding: 0px 70px !important; */
+}
+.slick-slide img {
+    width: 100%;
+}
+.banner__item {
+    border-radius: 10px;
+    overflow: hidden;
+}
+.banner__item:not(:last-child) {
+    margin-right: 15px;
+}
+.banner__img {
+    height: 70px;
+    border-radius: 15px;
+    overflow: hidden;
+}

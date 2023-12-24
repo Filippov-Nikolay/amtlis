@@ -9,6 +9,9 @@ body, h1, h2, h3, h4, h5, h6, p {
 img {
     display: block;
     max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    writing-mode: vertical-rl;
 }
 ul, li {
     display: block;
