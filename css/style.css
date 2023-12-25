@@ -7,6 +7,7 @@
 @import url('normalize.css');
 @import url('header.css');
 @import url('banner.css');
+@import url('category.css');
 
 :root {
     /* main */
@@ -19,7 +20,11 @@
     --bg-button: var(--bg-color);
     --bg-button-hover: #6486DB;
     --color-text-button-hover: #000;
+    --color-btn-active: #000;
+    --bg-btn-active: #6486DB;
+    --color-text-btn: #fff;
     --color-button-border: #6486DB;
+    --color-button-border-category: var(--bg-color-revers);
 
     --bg-color-border: #ACACAC;
     

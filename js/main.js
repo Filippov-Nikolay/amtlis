@@ -49,6 +49,18 @@ $(document).ready(function() {
         focusOnSelect: true
     });
 
+    // $(".category__btn").click(function() {
+    //     $(".category__btn").removeClass("category__btn--active");
+    //     $(this).addClass("category__btn--active");
+    // });
+
+    $(".category__slider").slick({
+        slidesToShow: 1,
+        infinite: false,
+        arrows: false,
+        variableWidth: true
+    });
+
 
     // button
     let canvas = document.getElementById("canvas__btn");
@@ -64,7 +76,7 @@ $(document).ready(function() {
     ctx.lineTo(25, 270);
 
     ctx.moveTo(90, 180);
-    ctx.lineTo(50, 270); // 20px дальше и в два раза короче
+    ctx.lineTo(50, 270);
 
     ctx.moveTo(220, 40);
     ctx.lineTo(85, 270);
@@ -77,20 +89,6 @@ $(document).ready(function() {
 
     ctx.moveTo(550, 160);
     ctx.lineTo(15, 360);
-
-    // ctx.moveTo(230, 180);
-    // ctx.lineTo(49010, 560);
-
-    // ctx.moveTo(280, 120);
-    // ctx.lineTo(130, 270);
-
-    // ctx.lineTo(60, 100);
-    // ctx.lineTo(80, 20);
-    // ctx.lineTo(100, 100);
-    // ctx.lineTo(140, 40);
-    // ctx.lineTo(120, 140);
-    // ctx.closePath();
-
     
     ctx.strokeStyle = "#6486DB";
     ctx.stroke();
