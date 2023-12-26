@@ -1,14 +1,14 @@
 $(document).ready(function() {
     // HEADER-MENU
     function showMenu () {
-        $(".left-bar").show();
-        $(".left-bar").css("transform", "translateX(0)");
+        $(".left-bar__about").show();
+        $(".left-bar__about").css("transform", "translateX(0)");
     }
     function hideMenu() {
-        $(".left-bar").css("transform", "translateX(-100%)");
+        $(".left-bar__about").css("transform", "translateX(-100%)");
 
         setTimeout(() => {
-            $(".left-bar").hide();
+            $(".left-bar__about").hide();
         }, 500);
     }
 
@@ -18,7 +18,7 @@ $(document).ready(function() {
         if (nextClick) {
             nextClick = false;
 
-            $(".left-bar").toggleClass("show-bar");
+            $(".left-bar__about").toggleClass("show-bar");
             $(".burger").addClass('click');
             setTimeout(function() {
                 $(".burger").removeClass('click');
@@ -26,9 +26,9 @@ $(document).ready(function() {
                 nextClick = true;
             }, 500);
     
-            console.log($(".left-bar").hasClass("show-bar"));
+            console.log($(".left-bar__about").hasClass("show-bar"));
     
-            $(".left-bar").hasClass("show-bar") ? showMenu() : hideMenu();
+            $(".left-bar__about").hasClass("show-bar") ? showMenu() : hideMenu();
         }
     });
 

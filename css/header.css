@@ -71,7 +71,8 @@
     padding-bottom: 100px;
 
     max-width: 350px;
-    max-height: 90vh;
+    /* max-height: 90vh; */
+    height: 100vh;
 
     background-color: var(--bg-color);
     text-transform: capitalize;
@@ -84,6 +85,9 @@
 }
 .left-bar__menu {
     width: 200px;
+}
+.left-bar__menu:last-child {
+    padding-bottom: 50px;
 }
 .left-bar__title {
     margin-bottom: 20px;
