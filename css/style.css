@@ -16,6 +16,7 @@
     --bg-color-revers: #fff;
     --color-text: #fff;
     --color-text-hover: #6486DB;
+    --color-video-info: #ffffffb3;
 
     /* button */
     --bg-button: var(--bg-color);
