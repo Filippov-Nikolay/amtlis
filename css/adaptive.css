@@ -70,11 +70,17 @@
     .header__form {
         display: none;
     }
-    .header-right-bar__link:not(:last-child) {
+    .header-right-bar__link:not(.header-right-bar__avatar, .header-right-bar__search) {
         display: none;
+    }
+    .header-right-bar__search {
+        display: block;
     }
     .header-right-bar {
         margin-left: auto;
+    }
+    .canvas__btn-wrapper::after {
+        width: 330px;
     }
     .video-about {
         grid-template-columns: repeat(1, 1fr);
@@ -95,12 +101,17 @@
     .video-about {
         display: block;
     }
+    .video__item:not(:last-child) {
+        margin-bottom: 30px;
+    }
     .canvas__btn-wrapper::after {
        display: none;
     }
     .banner__video-info {
         margin-top: 15px;
         margin-left: 5px;
+
+        flex-wrap: wrap;
     }
     .banner__video-name {
         width: 100%;
