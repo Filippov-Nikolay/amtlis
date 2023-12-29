@@ -58,10 +58,9 @@ $(document).ready(function() {
         ]
     });
 
-    // $(".category__btn").click(function() {
-    //     $(".category__btn").removeClass("category__btn--active");
-    //     $(this).addClass("category__btn--active");
-    // });
+
+    // CATEGORY
+    let isLongClick = true;
 
     $(".category__slider").slick({
         slidesToShow: 1,
@@ -69,9 +68,30 @@ $(document).ready(function() {
         arrows: false,
         variableWidth: true
     });
+    $(".category__slider").mousedown(function() {
+        clickTimer = setTimeout(function() {
+            isLongClick = false;
+            console.log("Длинный клик");
+            $(".category__btn").off("click");
+        }, 250);
+    });
+    $(".category__slider").mouseup(function() {
+        clearTimeout(clickTimer);
+
+        if (isLongClick) {
+            console.log("Короткий клик");
+
+            $(".category__btn").click(function() {
+                $(".category__btn").removeClass("category__btn--active");
+                $(this).addClass("category__btn--active");
+            });
+        }
+
+        isLongClick = true;
+    });
 
 
-    // button
+    // BUTTON "WATCH"
     let canvas = document.getElementById("canvas__btn");
     let ctx = canvas.getContext('2d');
 
@@ -137,7 +157,7 @@ $(document).ready(function() {
                 templateClone.querySelector(".video-content__number-views").innerHTML = `${viewsCount.substring(0, 3)}K views`;
             }
             else if (viewsCount.length == 7) {
-                templateClone.querySelector(".video-content__number-views").innerHTML = `${viewsCount.substring(0, 1)},${viewsCount.substring(1, 2)}M view`;
+                templateClone.querySelector(".video-content__number-views").innerHTML = `${viewsCount.substring(0, 1)}.${viewsCount.substring(1, 2)}M view`;
             }
             else if (viewsCount.length == 8) {
                 templateClone.querySelector(".video-content__number-views").innerHTML = `${viewsCount.substring(0, 2)}M view`;
