@@ -4,9 +4,7 @@
     box-sizing: border-box;
 }
 
-body {
-    margin: 25px 0;
-}
+
 
 img {
     display: block;
@@ -55,12 +53,7 @@ a {
 
     /* background: url(img/TheEqualizer3.jpg) no-repeat center /cover; */
 }
-.section_FromChanel{
-    width: 344px;
-    height: 609px;
-    border-radius: 10px;
-    background: var(--gradient-blue, linear-gradient(180deg, #6486DB -19.87%, #090909 100%));
-}
+
 
 .section__info{
 }
@@ -120,19 +113,6 @@ a {
     color: var(--color-text-button-hover);
     background-color: var(--bg-button-hover);
 }
-.metadata-review {
-    position: relative;
-
-    display: flex;
-    align-items: center;
-
-    width: max-content;
-
-    
-    overflow: hidden;
-
-    margin-left: 25px;
-}
 
 .metadata-review img {
     max-width: 24px;
@@ -141,7 +121,7 @@ a {
     position: relative;
     display: flex;
     align-items: center;
-
+    margin-left: 25px;
     padding: 6px 10px;
     border-radius: 18px;
     transition: all .5s;
@@ -192,6 +172,7 @@ a {
     background: var(--gradient-2, linear-gradient(121deg, #090909 35.91%, #6486DB 254.73%));
 
 }
+
 .description {
     margin-top: 12px;
     padding: 12px;
@@ -201,8 +182,8 @@ a {
 
     border-radius: 12px;
     min-width: 100%
-   
 }
+
 .description__text {
 }
 
@@ -212,3 +193,47 @@ a {
     justify-content: space-between;
 }
 
+.section_FromChannel{
+    width: 344px;
+    height: 609px;
+    border-radius: 10px;
+    background: var(--gradient-blue, linear-gradient(180deg, #6486DB -19.87%, #090909 100%));
+}
+
+.channel-header {
+    margin:  15px;
+    font-size: 1.25em;
+}   
+
+.video-text-container{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 33px;
+    margin: 0 15px;
+
+}
+.video-text-wrapper{
+    display: flex;
+}
+
+.video-container img{
+    width: 145px;
+    height: 81px;
+    border-radius: 5px;
+}
+
+.text-wrapper {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.text-wrapper p{
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
