@@ -463,28 +463,30 @@
                 <div class="video-content__item">
                     <h3 class="video__title">Top 10 on this week</h3>
                     <ul class="video-about">
-                        <li class="video__item">
-                            <a class="link__video" href="video.html">
-                                <img src="img/video__content/universalPictures/VIDEOCARD.jpg" alt="">
-                                <div class="video-about__video-wrapper">
-                                    <object data="channel-obj">
-                                        <a class="channel__link" href="#channel">
-                                            <img src="img/video__content/universalPictures/channels4_profile.jpg" alt="">
-                                        </a>
-                                    </object>
-                                    <div class="video-about__video-innter">
-                                        <div class="name-video__link">Five Nights At Freddy's | Official Teaser</div>
+                        <template id="template">
+                            <li class="video__item">
+                                <a class="link__video" href="#">
+                                    <img class="video-img" src="img/video__content/universalPictures/VIDEOCARD.jpg" alt="">
+                                    <div class="video-about__video-wrapper">
                                         <object data="channel-obj">
-                                            <a class="channel-name__link" href="#channel">Universal Pictures</a>
+                                            <a class="channel__link" href="#channel">
+                                                <img class="channel__link-img" src="img/video__content/universalPictures/channels4_profile.jpg" alt="">
+                                            </a>
                                         </object>
-                                        <div class="video-content__info-wrapper">
-                                            <p class="video-content__info video-content__number-views">636K views</p>
-                                            <p class="video-content__info video-content__metadata">3 months ago</p>
+                                        <div class="video-about__video-innter">
+                                            <div class="name-video__link">Five Nights At Freddy's | Official Teaser</div>
+                                            <object data="channel-obj">
+                                                <a class="channel-name__link" href="#channel">Universal Pictures</a>
+                                            </object>
+                                            <div class="video-content__info-wrapper">
+                                                <p class="video-content__info video-content__number-views">636K views</p>
+                                                <p class="video-content__info video-content__metadata">3 months ago</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
-                        </li>
+                                </a>
+                            </li>
+                        </template>
                     </ul>
                 </div>
                 
@@ -492,7 +494,7 @@
                     <h3 class="video__title">All</h3>
                     <ul class="video-about">
                         <li class="video__item">
-                            <a class="link__video" href="video.html">
+                            <a class="link__video" href="#">
                                 <img src="img/video__content/universalPictures/VIDEOCARD.jpg" alt="">
                                 <div class="video-about__video-wrapper">
                                     <object data="channel-obj">

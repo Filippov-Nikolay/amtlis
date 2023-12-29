@@ -101,4 +101,62 @@ $(document).ready(function() {
     
     ctx.strokeStyle = "#6486DB";
     ctx.stroke();
+
+
+    // TEMPLATE
+    let url = "../database/listVideo.json";
+    let template = document.querySelector("#template");
+    let templateClone = template.content.cloneNode(true);
+    let content = $(".video-about");
+
+    console.log(templateClone);
+    console.log(content);
+
+    fetch(url)
+    .then(response => response.json()) // десериализует объект из ответа в JSON формате
+    .then(json => {
+        console.log(Object.keys(json[0]));
+        
+        let size = json.length;
+
+        for (let i = 0; i < size; i++) {
+            templateClone = template.content.cloneNode(true);
+
+            templateClone.querySelector(".video-img").setAttribute("src", json[i].path_to_video_photo);
+            templateClone.querySelector(".channel__link-img").setAttribute("src", json[i].channel_image_title);
+            
+            templateClone.querySelector(".link__video").setAttribute("href", `video.html${json[i].video_url}` );
+            templateClone.querySelector(".name-video__link").innerHTML = json[i].video_title;
+            templateClone.querySelector(".channel-name__link").innerHTML = json[i].channel_title;
+
+            let viewsCount = String(json[i].views_count);
+            if (viewsCount.length == 5) {
+                templateClone.querySelector(".video-content__number-views").innerHTML = `${viewsCount.substring(0, 2)}K views`;
+            }
+            else if (viewsCount.length == 6) {
+                templateClone.querySelector(".video-content__number-views").innerHTML = `${viewsCount.substring(0, 3)}K views`;
+            }
+            else if (viewsCount.length == 7) {
+                templateClone.querySelector(".video-content__number-views").innerHTML = `${viewsCount.substring(0, 1)},${viewsCount.substring(1, 2)}M view`;
+            }
+            else if (viewsCount.length == 8) {
+                templateClone.querySelector(".video-content__number-views").innerHTML = `${viewsCount.substring(0, 2)}M view`;
+            }
+            else {
+                templateClone.querySelector(".video-content__number-views").innerHTML = `${viewsCount} views`;
+            }
+
+            
+            templateClone.querySelector(".video-content__metadata").innerHTML = json[i].video_age;
+
+            content[0].append(templateClone);
+        }
+    });
+
+    // LOCAL STORAGE
+    $(document).on("click", ".link__video", function() {
+        console.log("TRUE");
+        localStorage.setItem("URL", $(".link__video").attr("href"));
+    });
+    
 });

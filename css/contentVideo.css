@@ -55,6 +55,7 @@
 .channel__link img {
 }
 .video-about__video-innter {
+    width: fit-content;
 }
 .name-video__link {
     color: #fff;
