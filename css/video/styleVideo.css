@@ -320,6 +320,32 @@ a {
     line-height: 120%; /* 15.6px */
 }   
 
+.info-video{
+    display: flex;
+    align-items: flex-start;
+    gap: 13px;
+}
+
+.info__views-video{
+    color: var(--grey, rgba(255, 255, 255, 0.70));
+
+    /* s13 */
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 15.6px */
+}
+
+.info__data-video{
+    color: var(--grey, rgba(255, 255, 255, 0.70));
+
+    /* s13 */
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 15.6px */
+}
+
 .avatar-channel{
     width: 45px;
     height: 45px;

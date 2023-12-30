@@ -79,6 +79,10 @@ path {
     /* stroke: var(--color-stroke-icon); */
 }
 
+a{
+    color: var(--color-text);
+}
+
 /* Animation when pressed */
 @keyframes animateClickBurger {
     0% {
