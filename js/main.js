@@ -58,20 +58,70 @@ $(document).ready(function() {
         ]
     });
 
-    // $(".category__btn").click(function() {
-    //     $(".category__btn").removeClass("category__btn--active");
-    //     $(this).addClass("category__btn--active");
+
+    // CATEGORY
+    let isLongClick = true;
+
+    // $(".category__slider").slick({
+    //     slidesToShow: 1,
+    //     infinite: false,
+    //     arrows: false,
+    //     variableWidth: true
     // });
 
-    $(".category__slider").slick({
-        slidesToShow: 1,
-        infinite: false,
-        arrows: false,
-        variableWidth: true
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+    
+    const slider = document.querySelector('.category__slider'); // замените '.items' на селектор вашего элемента
+
+    slider.addEventListener('mousedown', (e) => {
+    isDown = true;
+    startX = e.pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;
+    });
+
+    slider.addEventListener('mousemove', (e) => {
+    if(!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - slider.offsetLeft;
+    const walk = x - startX;
+    slider.scrollLeft = scrollLeft - walk;
+    });
+
+    slider.addEventListener('mouseup', () => {
+    isDown = false;
+    });
+
+    slider.addEventListener('mouseleave', () => {
+    isDown = false;
+    });
+        
+    
+    $(".category__slider").mousedown(function() {
+        clickTimer = setTimeout(function() {
+            isLongClick = false;
+            console.log("Длинный клик");
+            $(".category__btn").off("click");
+        }, 250);
+    });
+    $(".category__slider").mouseup(function() {
+        clearTimeout(clickTimer);
+
+        if (isLongClick) {
+            console.log("Короткий клик");
+
+            $(".category__btn").click(function() {
+                $(".category__btn").removeClass("category__btn--active");
+                $(this).addClass("category__btn--active");
+            });
+        }
+
+        isLongClick = true;
     });
 
 
-    // button
+    // BUTTON "WATCH"
     let canvas = document.getElementById("canvas__btn");
     let ctx = canvas.getContext('2d');
 
@@ -137,7 +187,7 @@ $(document).ready(function() {
                 templateClone.querySelector(".video-content__number-views").innerHTML = `${viewsCount.substring(0, 3)}K views`;
             }
             else if (viewsCount.length == 7) {
-                templateClone.querySelector(".video-content__number-views").innerHTML = `${viewsCount.substring(0, 1)},${viewsCount.substring(1, 2)}M view`;
+                templateClone.querySelector(".video-content__number-views").innerHTML = `${viewsCount.substring(0, 1)}.${viewsCount.substring(1, 2)}M view`;
             }
             else if (viewsCount.length == 8) {
                 templateClone.querySelector(".video-content__number-views").innerHTML = `${viewsCount.substring(0, 2)}M view`;
@@ -153,10 +203,10 @@ $(document).ready(function() {
         }
     });
 
+
     // LOCAL STORAGE
     $(document).on("click", ".link__video", function() {
         console.log("TRUE");
         localStorage.setItem("URL", $(".link__video").attr("href"));
     });
-    
 });

@@ -6,7 +6,8 @@
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-20.png",
         "channel_title": "SKVOT",
         "views_count": 12000,
-        "video_age": "1 year ago"
+        "video_age": "1 year ago",
+        "category": ["all", ""]
     },
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-21.png",
@@ -15,7 +16,8 @@
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-21.png",
         "channel_title": "Daði Freyr",
         "views_count": 45000000,
-        "video_age": "3 years ago"
+        "video_age": "3 years ago",
+        "category": ["all", ""]
     },
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-22.png",
@@ -24,7 +26,8 @@
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-22.png",
         "channel_title": "St3inway",
         "views_count": 6000000,
-        "video_age": "1 days ago"
+        "video_age": "1 days ago",
+        "category": ["all", ""]
     },
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-23.png",
@@ -33,60 +36,207 @@
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-23.png",
         "channel_title": "St3inway",
         "views_count": 6000000,
-        "video_age": "2 weeks ago"
+        "video_age": "2 weeks ago",
+        "category": ["all", ""]
     },
     {
-        "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-",
+        "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-16.png",
         "video_url": "?",
-        "video_title": "Заголовок видео 5",
-        "channel_image_title": "img/video__content/picturesChannel/Ellipse3",
-        "channel_title": "Название канала 5",
-        "views_count": 500000,
-        "video_age": "5 дней назад"
+        "video_title": "C4D 2023 Tutorial: Abstract Flowers with Hair, Dynamics and Redshift",
+        "channel_image_title": "img/video__content/picturesChannel/Ellipse3-16.png",
+        "channel_title": "Friends Of Motion",
+        "views_count": 27000,
+        "video_age": "8 months ago",
+        "category": ["all", ""]
     },
     {
-        "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-",
+        "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-17.png",
         "video_url": "?",
-        "video_title": "Заголовок видео 6",
-        "channel_image_title": "img/video__content/picturesChannel/Ellipse3",
-        "channel_title": "Название канала 6",
-        "views_count": 1000000,
-        "video_age": "месяц назад"
+        "video_title": "Loreen - Tattoo (Acoustic)",
+        "channel_image_title": "img/video__content/picturesChannel/Ellipse3-17.png",
+        "channel_title": "Loreen",
+        "views_count": 2200000,
+        "video_age": "4 weeks ago",
+        "category": ["all", ""]
     },
     {
-        "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-",
+        "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-18.png",
         "video_url": "?",
-        "video_title": "Заголовок видео 7",
-        "channel_image_title": "img/video__content/picturesChannel/Ellipse3",
-        "channel_title": "Название канала 7",
-        "views_count": 700000,
-        "video_age": "4 дня назад"
+        "video_title": "3D Text Topography With Adobe illustrator || Adobe Illustrator",
+        "channel_image_title": "img/video__content/picturesChannel/Ellipse3-18.png",
+        "channel_title": "XUYU Design Tutorials",
+        "views_count": 2400,
+        "video_age": "1 year ago",
+        "category": ["all", ""]
     },
     {
-        "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-",
+        "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-24.png",
         "video_url": "?",
-        "video_title": "Заголовок видео 8",
-        "channel_image_title": "img/video__content/picturesChannel/Ellipse3",
-        "channel_title": "Название канала 8",
-        "views_count": 900000,
-        "video_age": "2 месяца назад"
+        "video_title": "pirates of the Caribbean(guitar-robot)",
+        "channel_image_title": "img/video__content/picturesChannel/Ellipse3-24.png",
+        "channel_title": "Demin Vladimir",
+        "views_count": 2900000,
+        "video_age": "3 years ago",
+        "category": ["all", ""]
     },
     {
-        "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-",
+        "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-12.png",
         "video_url": "?",
-        "video_title": "Заголовок видео 9",
-        "channel_image_title": "img/video__content/picturesChannel/Ellipse3",
-        "channel_title": "Название канала 9",
-        "views_count": 600000,
-        "video_age": "несколько часов назад"
+        "video_title": "Take Care",
+        "channel_image_title": "img/video__content/picturesChannel/Ellipse3-12.png",
+        "channel_title": "_ Boisvert",
+        "views_count": 4600000,
+        "video_age": "3 years ago",
+        "category": ["all", ""]
     },
     {
-        "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-",
+        "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-13.png",
         "video_url": "?",
-        "video_title": "Заголовок видео 10",
-        "channel_image_title": "img/video__content/picturesChannel/Ellipse3",
-        "channel_title": "Название канала 10",
-        "views_count": 1300000,
-        "video_age": "несколько минут назад"
+        "video_title": "Five Nights At Freddy's | Official Teaser",
+        "channel_image_title": "img/video__content/picturesChannel/Ellipse3-13.png",
+        "channel_title": "Universal Pictures",
+        "views_count": 21000000,
+        "video_age": "2 weeks ago",
+        "category": ["all", ""]
+    },
+    {
+        "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-14.png",
+        "video_url": "?",
+        "video_title": "I used \"deep fakes\" to fix the Lion King",
+        "channel_image_title": "img/video__content/picturesChannel/Ellipse3-14.png",
+        "channel_title": "ontyj",
+        "views_count": 44000000,
+        "video_age": "3 years ago",
+        "category": ["all", ""]
+    },
+    {
+        "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-15.png",
+        "video_url": "?",
+        "video_title": "BABYMETAL // CATCH ME IF YOU CAN",
+        "channel_image_title": "img/video__content/picturesChannel/Ellipse3-15.png",
+        "channel_title": "KuroKiitsuneSama",
+        "views_count": 6000000,
+        "video_age": "1 year ago",
+        "category": ["all", ""]
+    },
+    {
+        "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-0.png",
+        "video_url": "?",
+        "video_title": "If Arctic Monkeys wrote Sweater Weather",
+        "channel_image_title": "img/video__content/picturesChannel/Ellipse3-0.png",
+        "channel_title": "Bandit Runner",
+        "views_count": 1600000,
+        "video_age": "1 year ago",
+        "category": ["all", ""]
+    },
+    {
+        "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-1.png",
+        "video_url": "?",
+        "video_title": "Joji - SMITHEREENS Full Album (Pacific Coast Highway)",
+        "channel_image_title": "img/video__content/picturesChannel/Ellipse3-1.png",
+        "channel_title": "Joji Edits",
+        "views_count": 645000000,
+        "video_age": "6 months ago",
+        "category": ["all", ""]
+    },
+    {
+        "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-2.png",
+        "video_url": "?",
+        "video_title": "Daft Punk - Something About Us (Official Video)",
+        "channel_image_title": "img/video__content/picturesChannel/Ellipse3-2.png",
+        "channel_title": "Daft Punk",
+        "views_count": 81000000,
+        "video_age": "14 years ago",
+        "category": ["all", ""]
+    },
+    {
+        "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-3.png",
+        "video_url": "?",
+        "video_title": "電磁祭囃子 in NEO TOKYO 🏮",
+        "channel_image_title": "img/video__content/picturesChannel/Ellipse3-3.png",
+        "channel_title": "ELECTRONICOS FANTASTICOS!",
+        "views_count": 12000000,
+        "video_age": "2 years ago",
+        "category": ["all", ""]
+    },
+    {
+        "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-4.png",
+        "video_url": "?",
+        "video_title": "Sinematik Video Estetik | Cinematic Video Aesthetic | Beautiful Sunset",
+        "channel_image_title": "img/video__content/picturesChannel/Ellipse3-4.png",
+        "channel_title": "Dandi Yakuza",
+        "views_count": 2900000,
+        "video_age": "2 months ago",
+        "category": ["all", ""]
+    },
+    {
+        "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-5.png",
+        "video_url": "?",
+        "video_title": "Blockhead - The Music Scene",
+        "channel_image_title": "img/video__content/picturesChannel/Ellipse3-5.png",
+        "channel_title": "Ninja Tune",
+        "views_count": 18000000,
+        "video_age": "13 years ago",
+        "category": ["all", ""]
+    },
+    {
+        "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-6.png",
+        "video_url": "?",
+        "video_title": "Takashi Ito - Thunder",
+        "channel_image_title": "img/video__content/picturesChannel/Ellipse3-6.png",
+        "channel_title": "nieu latyn",
+        "views_count": 55000,
+        "video_age": "3 years ago",
+        "category": ["all", ""]
+    },
+    {
+        "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-7.png",
+        "video_url": "?",
+        "video_title": "Crumb - Locket [Official Video]",
+        "channel_image_title": "img/video__content/picturesChannel/Ellipse3-7.png",
+        "channel_title": "Crumb The Band",
+        "views_count": 44000000,
+        "video_age": "5 years ago",
+        "category": ["all", ""]
+    },
+    {
+        "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-8.png",
+        "video_url": "?",
+        "video_title": "another rainy day in sweden ~ nordic lofi mix",
+        "channel_image_title": "img/video__content/picturesChannel/Ellipse3-8.png",
+        "channel_title": "Cozy Nordic",
+        "views_count": 636000,
+        "video_age": "3 months ago",
+        "category": ["all", ""]
+    },
+    {
+        "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-9.png",
+        "video_url": "?",
+        "video_title": "Peter Tscherkassky - Outer Space",
+        "channel_image_title": "img/video__content/picturesChannel/Ellipse3-9.png",
+        "channel_title": "Index Edition",
+        "views_count": 92000,
+        "video_age": "4 years ago",
+        "category": ["all", ""]
+    },
+    {
+        "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-10.png",
+        "video_url": "?",
+        "video_title": "CINEMATIC ALAM",
+        "channel_image_title": "img/video__content/picturesChannel/Ellipse3-10.png",
+        "channel_title": "wildan ar",
+        "views_count": 571000,
+        "video_age": "5 years ago",
+        "category": ["all", ""]
+    },
+    {
+        "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-11.png",
+        "video_url": "?",
+        "video_title": "The hardest piece I've ever played on guitar...",
+        "channel_image_title": "img/video__content/picturesChannel/Ellipse3-11.png",
+        "channel_title": "Brandon Acker",
+        "views_count": 1200000,
+        "video_age": "3 years ago",
+        "category": ["all", ""]
     }
 ]
