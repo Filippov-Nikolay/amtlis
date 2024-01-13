@@ -62,12 +62,42 @@ $(document).ready(function() {
     // CATEGORY
     let isLongClick = true;
 
-    $(".category__slider").slick({
-        slidesToShow: 1,
-        infinite: false,
-        arrows: false,
-        variableWidth: true
+    // $(".category__slider").slick({
+    //     slidesToShow: 1,
+    //     infinite: false,
+    //     arrows: false,
+    //     variableWidth: true
+    // });
+
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+    
+    const slider = document.querySelector('.category__slider'); // замените '.items' на селектор вашего элемента
+
+    slider.addEventListener('mousedown', (e) => {
+    isDown = true;
+    startX = e.pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;
     });
+
+    slider.addEventListener('mousemove', (e) => {
+    if(!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - slider.offsetLeft;
+    const walk = x - startX;
+    slider.scrollLeft = scrollLeft - walk;
+    });
+
+    slider.addEventListener('mouseup', () => {
+    isDown = false;
+    });
+
+    slider.addEventListener('mouseleave', () => {
+    isDown = false;
+    });
+        
+    
     $(".category__slider").mousedown(function() {
         clickTimer = setTimeout(function() {
             isLongClick = false;
@@ -173,10 +203,10 @@ $(document).ready(function() {
         }
     });
 
+
     // LOCAL STORAGE
     $(document).on("click", ".link__video", function() {
         console.log("TRUE");
         localStorage.setItem("URL", $(".link__video").attr("href"));
     });
-    
 });
