@@ -1,242 +1,282 @@
 [
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-20.png",
-        "video_url": "?channel=SKVOT&videoT=kdjdbdkifusdejvi",
+        "video_url": "?channel=SKVOT&v=guJD6KVaaZE",
         "video_title": "Вакуумная упаковка cloth simulation с лого в Cinema 4D",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-20.png",
         "channel_title": "SKVOT",
         "views_count": 12000,
         "video_age": "1 year ago",
-        "category": ["all", ""]
+        "category": ["entertaining", "top_10_for_the_week", "all"]
     },
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-21.png",
-        "video_url": "?",
+        "video_url": "?channel=DaðiFreyr&v=VFZNvj-HfBU",
         "video_title": "Daði Freyr (Daði & Gagnamagnið) – Think About Things (Official Video)",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-21.png",
         "channel_title": "Daði Freyr",
         "views_count": 45000000,
         "video_age": "3 years ago",
-        "category": ["all", ""]
+        "category": ["music", "top_10_for_the_week", "all"]
     },
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-22.png",
-        "video_url": "?",
+        "video_url": "?channel=St3inway&v=AbCdEfGhIjK",
         "video_title": "'Before Your Very Eyes...Atoms for Peace -MAMA JAMMA (Live cover)",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-22.png",
         "channel_title": "St3inway",
         "views_count": 6000000,
         "video_age": "1 days ago",
-        "category": ["all", ""]
+        "category": ["music", "top_10_for_the_week", "all"]
     },
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-23.png",
-        "video_url": "?",
+        "video_url": "?channel=RushE&v=12aB34cD56e",
         "video_title": "Rush E",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-23.png",
         "channel_title": "St3inway",
         "views_count": 6000000,
         "video_age": "2 weeks ago",
-        "category": ["all", ""]
+        "category": ["music", "top_10_for_the_week", "all"]
     },
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-16.png",
-        "video_url": "?",
+        "video_url": "?channel=FriendsOfMotion&v=78FgHi90JkL",
         "video_title": "C4D 2023 Tutorial: Abstract Flowers with Hair, Dynamics and Redshift",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-16.png",
         "channel_title": "Friends Of Motion",
         "views_count": 27000,
         "video_age": "8 months ago",
-        "category": ["all", ""]
+        "category": ["tutorial", "continue_watching", "all"]
     },
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-17.png",
-        "video_url": "?",
+        "video_url": "?channel=Loreen&v=7dfGhJkLm2n",
         "video_title": "Loreen - Tattoo (Acoustic)",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-17.png",
         "channel_title": "Loreen",
         "views_count": 2200000,
         "video_age": "4 weeks ago",
-        "category": ["all", ""]
+        "category": ["music", "continue_watching", "all"]
     },
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-18.png",
-        "video_url": "?",
+        "video_url": "?channel=XUYUDesignTutorials&v=XyZ123456AbC",
         "video_title": "3D Text Topography With Adobe illustrator || Adobe Illustrator",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-18.png",
         "channel_title": "XUYU Design Tutorials",
         "views_count": 2400,
         "video_age": "1 year ago",
-        "category": ["all", ""]
+        "category": ["tutorial", "continue_watching", "all"]
     },
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-24.png",
-        "video_url": "?",
+        "video_url": "?channel=DeminVladimir&v=A3pQrStUvXy",
         "video_title": "pirates of the Caribbean(guitar-robot)",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-24.png",
         "channel_title": "Demin Vladimir",
         "views_count": 2900000,
         "video_age": "3 years ago",
-        "category": ["all", ""]
+        "category": ["entertaining", "continue_watching", "all"]
     },
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-12.png",
-        "video_url": "?",
+        "video_url": "?channel=_Boisvert&v=Z1bC5eFgH9i",
         "video_title": "Take Care",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-12.png",
         "channel_title": "_ Boisvert",
         "views_count": 4600000,
         "video_age": "3 years ago",
-        "category": ["all", ""]
+        "category": ["music", "popular", "all"]
     },
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-13.png",
-        "video_url": "?",
+        "video_url": "?channel=UniversalPictures&v=Q8wR2tY6uI0",
         "video_title": "Five Nights At Freddy's | Official Teaser",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-13.png",
         "channel_title": "Universal Pictures",
         "views_count": 21000000,
         "video_age": "2 weeks ago",
-        "category": ["all", ""]
+        "category": ["movie_trailer", "popular", "all"]
     },
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-14.png",
-        "video_url": "?",
+        "video_url": "?channel=ontyj&v=P7oN4lM3k9J",
         "video_title": "I used \"deep fakes\" to fix the Lion King",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-14.png",
         "channel_title": "ontyj",
         "views_count": 44000000,
         "video_age": "3 years ago",
-        "category": ["all", ""]
+        "category": ["entertaining", "popular", "all"]
     },
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-15.png",
-        "video_url": "?",
+        "video_url": "?channel=KuroKiitsuneSama&v=X2zV6cB8xQ1",
         "video_title": "BABYMETAL // CATCH ME IF YOU CAN",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-15.png",
         "channel_title": "KuroKiitsuneSama",
         "views_count": 6000000,
         "video_age": "1 year ago",
-        "category": ["all", ""]
+        "category": ["music", "popular", "all"]
     },
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-0.png",
-        "video_url": "?",
+        "video_url": "?channel=BanditRunner&v=K5dL9fG3hS6",
         "video_title": "If Arctic Monkeys wrote Sweater Weather",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-0.png",
         "channel_title": "Bandit Runner",
         "views_count": 1600000,
         "video_age": "1 year ago",
-        "category": ["all", ""]
+        "category": ["music", "all"]
     },
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-1.png",
-        "video_url": "?",
+        "video_url": "?channel=JojiEdits&v=J4pO7rT2uW0",
         "video_title": "Joji - SMITHEREENS Full Album (Pacific Coast Highway)",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-1.png",
         "channel_title": "Joji Edits",
         "views_count": 645000000,
         "video_age": "6 months ago",
-        "category": ["all", ""]
+        "category": ["music", "all"]
     },
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-2.png",
-        "video_url": "?",
+        "video_url": "?channel=DaftPunk&v=M1nY8bZ9xQ3",
         "video_title": "Daft Punk - Something About Us (Official Video)",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-2.png",
         "channel_title": "Daft Punk",
         "views_count": 81000000,
         "video_age": "14 years ago",
-        "category": ["all", ""]
+        "category": ["music", "all"]
     },
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-3.png",
-        "video_url": "?",
+        "video_url": "?channel=ELECTRONICOSFANTASTICOS!&v=U7vC3xG2hR5",
         "video_title": "電磁祭囃子 in NEO TOKYO 🏮",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-3.png",
         "channel_title": "ELECTRONICOS FANTASTICOS!",
         "views_count": 12000000,
         "video_age": "2 years ago",
-        "category": ["all", ""]
+        "category": ["music", "entertaining", "all"]
     },
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-4.png",
-        "video_url": "?",
+        "video_url": "?channel=DandiYakuza&v=I9oL2mN7pK4",
         "video_title": "Sinematik Video Estetik | Cinematic Video Aesthetic | Beautiful Sunset",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-4.png",
         "channel_title": "Dandi Yakuza",
         "views_count": 2900000,
         "video_age": "2 months ago",
-        "category": ["all", ""]
+        "category": ["music", "all"]
     },
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-5.png",
-        "video_url": "?",
+        "video_url": "?channel=NinjaTune&v=W6uH8rT5yZ1",
         "video_title": "Blockhead - The Music Scene",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-5.png",
         "channel_title": "Ninja Tune",
         "views_count": 18000000,
         "video_age": "13 years ago",
-        "category": ["all", ""]
+        "category": ["music", "all"]
     },
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-6.png",
-        "video_url": "?",
+        "video_url": "?channel=nieulatyn&v=G3qP9wR2iL0",
         "video_title": "Takashi Ito - Thunder",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-6.png",
         "channel_title": "nieu latyn",
         "views_count": 55000,
         "video_age": "3 years ago",
-        "category": ["all", ""]
+        "category": ["music", "all"]
     },
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-7.png",
-        "video_url": "?",
+        "video_url": "?channel=CrumbTheBand&v=34IjKlmN56",
         "video_title": "Crumb - Locket [Official Video]",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-7.png",
         "channel_title": "Crumb The Band",
         "views_count": 44000000,
         "video_age": "5 years ago",
-        "category": ["all", ""]
+        "category": ["music", "all"]
     },
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-8.png",
-        "video_url": "?",
+        "video_url": "?channel=CozyNordic&v=78XyZ90AbC",
         "video_title": "another rainy day in sweden ~ nordic lofi mix",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-8.png",
         "channel_title": "Cozy Nordic",
         "views_count": 636000,
         "video_age": "3 months ago",
-        "category": ["all", ""]
+        "category": ["music", "all"]
     },
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-9.png",
-        "video_url": "?",
+        "video_url": "?channel=IndexEdition&v=12MnOpQr34",
         "video_title": "Peter Tscherkassky - Outer Space",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-9.png",
         "channel_title": "Index Edition",
         "views_count": 92000,
         "video_age": "4 years ago",
-        "category": ["all", ""]
+        "category": ["music", "all"]
     },
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-10.png",
-        "video_url": "?",
+        "video_url": "?channel=wildanar&v=56StUvWx78",
         "video_title": "CINEMATIC ALAM",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-10.png",
         "channel_title": "wildan ar",
         "views_count": 571000,
         "video_age": "5 years ago",
-        "category": ["all", ""]
+        "category": ["music", "all"]
     },
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-11.png",
-        "video_url": "?",
+        "video_url": "?channel=BrandonAcker&v=EFgHiJKL34",
         "video_title": "The hardest piece I've ever played on guitar...",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-11.png",
         "channel_title": "Brandon Acker",
         "views_count": 1200000,
         "video_age": "3 years ago",
-        "category": ["all", ""]
+        "category": ["music", "entertaining", "all"]
+    },
+    {
+        "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-25.jpg",
+        "video_url": "?channel=Hajime&v=95NsRZP4zco",
+        "video_title": "Miyagi & Эндшпиль - Narrative (Official Audio)",
+        "channel_image_title": "img/video__content/picturesChannel/Ellipse3-25.jpg",
+        "channel_title": "Hajime",
+        "views_count": 233000,
+        "video_age": "2 days ago",
+        "category": ["music", "all"]
+    },
+    {
+        "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-26.jpg",
+        "video_url": "?channel=LP&v=hn3wJ1_1Zsg",
+        "video_title": "LP - Lost On You (Official Music Video)",
+        "channel_image_title": "img/video__content/picturesChannel/Ellipse3-26.jpg",
+        "channel_title": "LP",
+        "views_count": 534000000,
+        "video_age": "7 years ago",
+        "category": ["music", "all"]
+    },
+    {
+        "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-27.jpg",
+        "video_url": "?channel=ENLEO&v=icaSda6Rrrg",
+        "video_title": "ENLEO - ВЕДИ МЕНЕ В ХРАМ (TAKE ME TO CHURCH УКРАЇНСЬКОЮ)",
+        "channel_image_title": "img/video__content/picturesChannel/Ellipse3-27.jpg",
+        "channel_title": "ENLEO",
+        "views_count": 7300000,
+        "video_age": "1 year ago",
+        "category": ["music", "all"]
+    },
+    {
+        "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-28.jpg",
+        "video_url": "?channel=TheWeeknd&v=XXYlFuWEuKI",
+        "video_title": "The Weeknd - Save Your Tears (Official Music Video)",
+        "channel_image_title": "img/video__content/picturesChannel/Ellipse3-28.jpg",
+        "channel_title": "The Weeknd",
+        "views_count": 1440663631,
+        "video_age": "3 years ago",
+        "category": ["music", "all"]
     }
 ]

@@ -118,6 +118,9 @@
     opacity: 0.5;
 }
 .banner__btn {
+    position: relative;
+    z-index: 2;
+
     padding: 15px 60px;
 
     color: #fff;

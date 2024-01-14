@@ -12,6 +12,8 @@
 
 .video__title {
     margin-bottom: 25px;
+
+    text-transform: capitalize;
 }
 .video-content__item:not(:first-child) {
     margin-top: 35px;
@@ -31,12 +33,17 @@
 }
 .link__video {
     /* margin-bottom: 10px; */
-
-    border-radius: 10px;
-    overflow: hidden;
 }
 .link__video img {
     width: 100%;
+    height: 100%;
+}
+.video-img {
+    max-width: 345px;
+    max-height: 175px;
+
+    border-radius: 10px;
+    overflow: hidden;
 }
 .video-about__video-wrapper {
     display: flex;
@@ -58,6 +65,11 @@
     width: fit-content;
 }
 .name-video__link {
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
     color: #fff;
 }
 .channel-name__link {

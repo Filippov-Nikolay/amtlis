@@ -358,7 +358,8 @@
                         <div class="banner__wrapper">
                             <div class="canvas__btn-wrapper">
                                 <canvas id="canvas__btn">Обновите браузер</canvas>
-                                <button class="banner__btn">watch</button>
+                                <!-- <button class="banner__btn">watch</button> -->
+                                <a class="banner__btn" href="#">watch</a>
                             </div>
                             <ul class="banner__video-info video-info">
                                 <h3 class="banner__video-name">Enleo</h3>
@@ -376,13 +377,7 @@
                         <img src="img/content__banner/banner1.jpg" alt="banner">
                     </div>
                     <div class="slider-for__img">
-                        <img src="img/content__banner/banner2.jpg" alt="banner">
-                    </div>
-                    <div class="slider-for__img">
-                        <img src="img/content__banner/banner.jpg" alt="banner">
-                    </div>
-                    <div class="slider-for__img">
-                        <img src="img/content__banner/banner1.jpg" alt="banner">
+                        <img src="img/content__banner/banner3.jpg" alt="banner">
                     </div>
                     <div class="slider-for__img">
                         <img src="img/content__banner/banner2.jpg" alt="banner">
@@ -391,32 +386,22 @@
                 <div class="banner__about">
                     <div class="container">
                         <div class="slider-nav">
-                            <div class="banner__item">
+                            <div class="banner__item" data-link="?channel=ENLEO&v=icaSda6Rrrg">
                                 <div class="banner__img">
                                     <img src="img/content__banner/banner.jpg" alt="banner">
                                 </div>
                             </div>
-                            <div class="banner__item">
+                            <div class="banner__item" data-link="?channel=TheWeeknd&v=XXYlFuWEuKI">
                                 <div class="banner__img">
                                     <img src="img/content__banner/banner1.jpg" alt="banner">
                                 </div>
                             </div>
-                            <div class="banner__item">
+                            <div class="banner__item" data-link="?channel=Hajime&v=95NsRZP4zco">
                                 <div class="banner__img">
-                                    <img src="img/content__banner/banner2.jpg" alt="banner">
+                                    <img src="img/content__banner/banner3.jpg" alt="banner">
                                 </div>
                             </div>
-                            <div class="banner__item">
-                                <div class="banner__img">
-                                    <img src="img/content__banner/banner.jpg" alt="banner">
-                                </div>
-                            </div>
-                            <div class="banner__item">
-                                <div class="banner__img">
-                                    <img src="img/content__banner/banner1.jpg" alt="banner">
-                                </div>
-                            </div>
-                            <div class="banner__item">
+                            <div class="banner__item" data-link="?channel=LP&v=hn3wJ1_1Zsg">
                                 <div class="banner__img">
                                     <img src="img/content__banner/banner2.jpg" alt="banner">
                                 </div>
@@ -450,39 +435,63 @@
         <section class="section video-content">
             <div class="container">
                 <!-- реализовать TEMPLATE -->
-                <div class="video-content__item">
+                <!-- TO DO
+                    добавить всем тегам id, в js обращаться через id
+                -->
+                <template id="template">
+                    <li class="video__item">
+                        <a class="link__video" href="#">
+                            <div class="video-img">
+                                <img src="img/video__content/universalPictures/VIDEOCARD.jpg" alt="">
+                            </div>
+                            <div class="video-about__video-wrapper">
+                                <object data="channel-obj">
+                                    <a class="channel__link" href="#channel">
+                                        <img class="channel__link-img" src="img/video__content/universalPictures/channels4_profile.jpg" alt="">
+                                    </a>
+                                </object>
+                                <div class="video-about__video-innter">
+                                    <div class="name-video__link">Five Nights At Freddy's | Official Teaser</div>
+                                    <object data="channel-obj">
+                                        <a class="channel-name__link" href="#channel">Universal Pictures</a>
+                                    </object>
+                                    <div class="video-content__info-wrapper">
+                                        <p class="video-content__info video-content__number-views">636K views</p>
+                                        <p class="video-content__info video-content__metadata">3 months ago</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </template>
+
+                <div id="top_10_for_the_week" class="video-content__item">
                     <h3 class="video__title">Top 10 on this week</h3>
                     <ul class="video-about">
-                        <template id="template">
-                            <li class="video__item">
-                                <a class="link__video" href="#">
-                                    <img class="video-img" src="img/video__content/universalPictures/VIDEOCARD.jpg" alt="">
-                                    <div class="video-about__video-wrapper">
-                                        <object data="channel-obj">
-                                            <a class="channel__link" href="#channel">
-                                                <img class="channel__link-img" src="img/video__content/universalPictures/channels4_profile.jpg" alt="">
-                                            </a>
-                                        </object>
-                                        <div class="video-about__video-innter">
-                                            <div class="name-video__link">Five Nights At Freddy's | Official Teaser</div>
-                                            <object data="channel-obj">
-                                                <a class="channel-name__link" href="#channel">Universal Pictures</a>
-                                            </object>
-                                            <div class="video-content__info-wrapper">
-                                                <p class="video-content__info video-content__number-views">636K views</p>
-                                                <p class="video-content__info video-content__metadata">3 months ago</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                        </template>
+                        
                     </ul>
                 </div>
                 
-                <div class="video-content__item">
-                    <h3 class="video__title">All</h3>
+                <div id="continue_watching" class="video-content__item">
+                    <h3 class="video__title">continue watching</h3>
                     <ul class="video-about">
+                        
+                    </ul>
+                </div>
+
+                <div id="popular" class="video-content__item">
+                    <h3 class="video__title">popular</h3>
+                    <ul class="video-about">
+                        
+                    </ul>
+                </div>
+
+                <div id="all" class="video-content__item">
+                    <h3 class="video__title">All video</h3>
+                    <ul class="video-about">
+
+                    </ul>
+                    <!-- <ul class="video-about">
                         <li class="video__item">
                             <a class="link__video" href="#">
                                 <img src="img/video__content/universalPictures/VIDEOCARD.jpg" alt="">
@@ -505,7 +514,7 @@
                                 </div>
                             </a>
                         </li>
-                    </ul>
+                    </ul> -->
                 </div>
             </div>
         </section>

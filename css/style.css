@@ -82,6 +82,9 @@ path {
 a{
     color: var(--color-text);
 }
+object {
+    min-width: max-content;
+}
 
 /* Animation when pressed */
 @keyframes animateClickBurger {

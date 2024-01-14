@@ -1,6 +1,8 @@
 .section {
 }
 .category {
+    position: relative;
+
     margin-top: 50px;
 }
 .category__wrapper {
@@ -14,6 +16,7 @@
     content: '';
 
     position: absolute;
+    top: 0;
     right: 0;
     
     display: block;

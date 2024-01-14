@@ -153,7 +153,7 @@ $(document).ready(function() {
     ctx.stroke();
 
 
-    // TEMPLATE
+    // TEMPLATE CONTENT
     let url = "../database/listVideo.json";
     let template = document.querySelector("#template");
     let templateClone = template.content.cloneNode(true);
@@ -169,15 +169,24 @@ $(document).ready(function() {
         
         let size = json.length;
 
+
+        // PAGE CATEGORIES
+        let top_10_for_the_week = document.querySelector("#top_10_for_the_week .video-about");
+        let continue_watching = document.querySelector("#continue_watching .video-about");
+        let popular = document.querySelector("#popular .video-about");
+        let all = document.querySelector("#all .video-about");
+
         for (let i = 0; i < size; i++) {
             templateClone = template.content.cloneNode(true);
 
-            templateClone.querySelector(".video-img").setAttribute("src", json[i].path_to_video_photo);
+            templateClone.querySelector(".video-img img").setAttribute("src", json[i].path_to_video_photo);
             templateClone.querySelector(".channel__link-img").setAttribute("src", json[i].channel_image_title);
             
             templateClone.querySelector(".link__video").setAttribute("href", `video.html${json[i].video_url}` );
             templateClone.querySelector(".name-video__link").innerHTML = json[i].video_title;
             templateClone.querySelector(".channel-name__link").innerHTML = json[i].channel_title;
+
+
 
             let viewsCount = String(json[i].views_count);
             if (viewsCount.length == 5) {
@@ -196,10 +205,24 @@ $(document).ready(function() {
                 templateClone.querySelector(".video-content__number-views").innerHTML = `${viewsCount} views`;
             }
 
-            
             templateClone.querySelector(".video-content__metadata").innerHTML = json[i].video_age;
 
-            content[0].append(templateClone);
+            for (let j = 0; j < json[i].category.length; j++) {
+                if (json[i].category[j] == "top_10_for_the_week") {
+                    top_10_for_the_week.append(templateClone);
+                    console.log(1);
+                } else if (json[i].category[j] == "continue_watching") {
+                    continue_watching.append(templateClone);
+                    console.log(2);
+                } else if (json[i].category[j] == "popular") {
+                    popular.append(templateClone);
+                    console.log(3);
+                } else if (json[i].category[j] == "all") {
+                    all.append(templateClone);
+                    console.log(4);
+                }
+            }
+            // content[0].append(templateClone);
         }
     });
 
@@ -208,5 +231,35 @@ $(document).ready(function() {
     $(document).on("click", ".link__video", function() {
         console.log("TRUE");
         localStorage.setItem("URL", $(".link__video").attr("href"));
+    });
+
+
+    // BANNER
+    function bannerContent(getUrl) {
+        fetch(url)
+            .then(response => response.json())
+            .then(json => {
+                let size = json.length;
+
+                for (let i = 0; i < size; i++) {
+                    if (getUrl == json[i].video_url) {
+                        // $(".banner__title").text = json[i].video_title;
+                        document.querySelector(".banner__title").innerHTML = json[i].video_title;
+                        document.querySelector(".banner__video-name").innerHTML = json[i].channel_title;
+                        document.querySelectorAll(".video-info__item")[0].innerHTML = json[i].views_count;
+                        document.querySelectorAll(".video-info__item")[1].innerHTML = json[i].video_age;
+                        document.querySelector(".banner__btn").setAttribute("href", `video.html${json[i].video_url}` );
+                        break;
+                    }
+                }
+        });
+    }
+    bannerContent($(".banner__item.slick-current").on(".banner__item .slick-current").data("link"));
+
+    $(".banner__about").on("click", ".slick-arrow", function() {
+        bannerContent($(".banner__item.slick-current").on(".banner__item .slick-current").data("link"));
+    });
+    $(".banner__item").click(function() {
+        bannerContent($(this).on(".slick-current").data("link"));
     });
 });
