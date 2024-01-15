@@ -72,6 +72,8 @@
     background: linear-gradient(90deg, rgba(6,6,6,1) 30%, rgba(0,212,255,0) 80%);
 
     text-transform: uppercase;
+
+    transition: all .8s ease;
 }
 .banner__inner {
     display: flex;
@@ -85,33 +87,113 @@
 .banner__title {
     margin-top: 20px;
     text-transform: uppercase;
+
+    transition: all .3s ease;
 }
 .banner__wrapper {
+    position: relative;
+
     display: flex;
 
     margin-top: auto;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
+
+    height: 100%;
 }
 .canvas__btn-wrapper {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    margin-top: auto;
+    margin-bottom: 25px;
 }
-.canvas__btn-wrapper::after {
+.canvas-decor {
+    display: flex;
+} 
+.canvas-decor__span {
+    position: absolute;
+    bottom: 0;
+
+    display: block;
+
+    width: 1px;
+    /* height: 100%; */
+
+    opacity: 0.5;
+
+    background-color: var(--color-button-border);
+    transform-origin: 100% 100%;
+
+    transition: all .8s ease;
+}
+.canvas-decor__span-1 {
+    bottom: -10px;
+
+    height: 45%;
+}
+.canvas-decor__span-2 {
+    margin-left: 35px;
+    height: 60%;
+    transform: skewX(-10deg);
+}
+.canvas-decor__span-3 {
+    margin-left: 63px;
+    height: 30%;
+    transform: skewX(-25deg);
+}
+.canvas-decor__span-4 {
+    margin-left: 110px;
+    height: 60%;
+    transform: skewX(-30deg);
+}
+.canvas-decor__span-5 {
+    margin-left: 160px;
+    height: 75%;
+    transform: skewX(-38deg);
+}
+.canvas-decor__span-6 {
+    margin-left: 210px;
+    height: 41%;
+    transform: skewX(-53deg);
+}
+.canvas-decor__span-7 {
+    bottom: -10px;
+
+    margin-left: 219px;
+    height: 59%;
+    transform: skewX(-64deg);
+}
+.canvas-decor__span-8 {
+    bottom: -68px;
+    
+    margin-left: 210px;
+    height: 160%;
+    transform: rotate(90deg);
+}
+/* .canvas-decor__span--hide {
+    height: 0;
+} */
+/* .canvas__btn-wrapper::after {
     content: '';
 
     position: absolute;
-    bottom: 20px;
+    bottom: 0;
 
     display: inline-block;
     
-    margin-top: 50px;
-    margin-left: -10px;
+    margin-left: 15px;
 
-    width: 340px;
+    width: 40%;
     height: 1px;
 
     opacity: 0.5;
 
     background-color: var(--color-button-border);
-}
+
+    transition: all .5s ease;
+} */
 #canvas__btn {
     position: absolute;
     bottom: 75px;
@@ -142,6 +224,8 @@
     align-items: center;
 
     margin-left: 40px;
+
+    transition: all .3s ease;
 }
 .video-info__item {
     margin-left: 5px;
@@ -166,6 +250,9 @@
 .banner__video-name {
 }
 .banner__bg {
+}
+.slider-nav {
+    transition: all .8s ease;
 }
 .banner__bg::before {
     content: '';
