@@ -467,3 +467,11 @@ textarea::placeholder {
     align-items: flex-start;
     gap: 5px;
 }
+
+.section_main-comments{
+    display: flex;
+    padding: 20px 0px;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
