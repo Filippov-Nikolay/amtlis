@@ -266,6 +266,33 @@ $(document).ready(function() {
     });
 
 
+    // FILTER CATEGORY
+    $(".category__btn").click(function() {
+        let filter = $(this).text();
+
+        fetch(url)
+            .then(response => response.json())
+            .then(json => {
+                let size = json.length;
+
+                for (let i = 0; i < size; i++) {
+                    for (let j = 0; j < json[i].category.length; j++) {
+                        
+                    }
+                    // if (getUrl == json[i].video_url) {
+                    //     // $(".banner__title").text = json[i].video_title;
+                    //     document.querySelector(".banner__title").innerHTML = json[i].video_title;
+                    //     document.querySelector(".banner__video-name").innerHTML = json[i].channel_title;
+                    //     document.querySelectorAll(".video-info__item")[0].innerHTML = formatNumber(String(json[i].views_count));
+                    //     document.querySelectorAll(".video-info__item")[1].innerHTML = json[i].video_age;
+                    //     document.querySelector(".banner__btn").setAttribute("href", `video.html${json[i].video_url}`);
+                    //     break;
+                    // }
+                }
+            });
+    });
+
+
     // LOCAL STORAGE
     $(document).on("click", ".link__video", function() {
         console.log("TRUE");
@@ -306,7 +333,6 @@ $(document).ready(function() {
             $(".banner__video-info").css("opacity", 1);
             $(".banner__title").css("opacity", 1);
         }, 300);
-        
     });
     $(".banner__item").click(function() {
         $(".banner__video-info").css("opacity", 0);
