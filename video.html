@@ -24,7 +24,8 @@
                 <div class="section__item">
                     <div class="section-wrapper">
                         <div class="section__video">
-                            <iframe src="https://www.youtube.com/embed/ULANywPmmVI?si=2tesb3xahotGYYnVcontrols=0"
+                            <iframe class="video"
+                                src="https://www.youtube.com/embed/ULANywPmmVI?si=2tesb3xahotGYYnVcontrols=0"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 allowfullscreen></iframe>
@@ -223,7 +224,6 @@
                                             fill="white" />
                                     </svg>
                                 </button>
-
                             </div>
                         </div>
                         <!-- Описание видео -->
@@ -231,11 +231,12 @@
                             <div class="section__always-shown always-shown">
                                 <!-- Просмотры и дата загрузки -->
                                 <div class="always-shown__item">
-                                    <p class="always-shown__title">3,9kk views 4 month ago </p>
+                                    <p class="always-shown__views item">3,9kk views</p>
+                                    <p class="always-shown__download item">4 month ago</p>
                                 </div>
                             </div>
                             <!-- Содержание видео -->
-                            <div class="section__content-wrapper">
+                            <div class="section__content-wrapper" id="contentWrapper">
                                 <p class="description__text">
                                     Веди мене в храм є україномовним перекладом відомої пісні Hozier «Take Me To
                                     Church»<br>
@@ -243,7 +244,7 @@
                                 </p>
                                 <!-- Кнопка "Show More" -->
 
-                                <button class="btn-metadata-review metadata-review__more">
+                                <button class="btn-metadata-review metadata-review__more" onclick="toggleSection()">
                                     <p class="text-btn">Show More</p>
                                     <svg width="18" height="10" viewBox="0 0 18 10" fill="white"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -469,9 +470,9 @@
         </section>
     </main>
     <script src="js/jquery-3.7.1.min.js"></script>
-    
     <script src="js/videoShow.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/videoShow.js"></script>
 </body>
 
 </html>
