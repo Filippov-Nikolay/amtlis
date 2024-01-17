@@ -35,13 +35,43 @@ $(document).ready(function() {
 
     // RIGHT BAR
     $(".header-right-bar__video").click(function (e) {
+        if($(".right-bar__menu-bell").attr("style") != undefined) {
+            if ($(".right-bar__menu-bell").attr("style").indexOf("block") != -1)
+                $(".right-bar__menu-bell").toggle("active");
+        }
+        if($(".right-bar-avatar").attr("style") != undefined) {
+            if ($(".right-bar-avatar").attr("style").indexOf("block") != -1)
+                $(".right-bar-avatar").toggle("active");
+        }
+
         $(".right-bar__menu-video").toggle("active");
+        // $(".right-bar__menu-video").toggleClass("header-right-bar__video--active");
     });
     $(".header-right-bar__bell").click(function (e) {
+        if($(".right-bar__menu-video").attr("style") != undefined) {
+            if ($(".right-bar__menu-video").attr("style").indexOf("block") != -1)
+                $(".right-bar__menu-video").toggle("active");
+        }
+        if($(".right-bar-avatar").attr("style") != undefined) {
+            if ($(".right-bar-avatar").attr("style").indexOf("block") != -1)
+                $(".right-bar-avatar").toggle("active");
+        }
+
         $(".right-bar__menu-bell").toggle("active");
+        // $(".right-bar__menu-bell").toggleClass("right-bar__menu-bell--active");
     });
     $(".header-right-bar__avatar").click(function (e) {
-        
+        if($(".right-bar__menu-video").attr("style") != undefined) {
+            if ($(".right-bar__menu-video").attr("style").indexOf("block") != -1)
+                $(".right-bar__menu-video").toggle("active");
+        }
+        if($(".right-bar__menu-bell").attr("style") != undefined) {
+            if ($(".right-bar__menu-bell").attr("style").indexOf("block") != -1)
+                $(".right-bar__menu-bell").toggle("active");
+        }
+
+        $(".right-bar-avatar").toggle("active");
+        // $(".right-bar-avatar").toggleClass("right-bar-avatar--active");
     });
 
     // CATEGORY
@@ -95,6 +125,8 @@ $(document).ready(function() {
         if (isLongClick) {
             console.log("Короткий клик ===================================");
             $(".category__btn").on("click", function () {
+                // FILTER CATEGORY
+
                 console.log($(".video__item").remove());
     
                 $(".category__btn").removeClass("category__btn--active");
@@ -146,15 +178,6 @@ $(document).ready(function() {
                                     }
                                 }
                             }
-                            // if (getUrl == json[i].video_url) {
-                            //     // $(".banner__title").text = json[i].video_title;
-                            //     document.querySelector(".banner__title").innerHTML = json[i].video_title;
-                            //     document.querySelector(".banner__video-name").innerHTML = json[i].channel_title;
-                            //     document.querySelectorAll(".video-info__item")[0].innerHTML = formatNumber(String(json[i].views_count));
-                            //     document.querySelectorAll(".video-info__item")[1].innerHTML = json[i].video_age;
-                            //     document.querySelector(".banner__btn").setAttribute("href", `video.html${json[i].video_url}`);
-                            //     break;
-                            // }
                         }
                 });
 
@@ -163,38 +186,6 @@ $(document).ready(function() {
         }
         isLongClick = true;
     });
-
-
-    // BUTTON "WATCH"
-    // let canvas = document.getElementById("canvas__btn");
-    // let ctx = canvas.getContext('2d');
-
-    // canvas.height = 280;
-    // canvas.width = 640;
-
-    // ctx.moveTo(-10, 1140); // наклон нижней части, длинна вниз
-    // ctx.lineTo(2, 140); // , длина вверх
-
-    // ctx.moveTo(60, 60);
-    // ctx.lineTo(25, 270);
-
-    // ctx.moveTo(90, 180);
-    // ctx.lineTo(50, 270);
-
-    // ctx.moveTo(220, 40);
-    // ctx.lineTo(85, 270);
-
-    // ctx.moveTo(390, 10);
-    // ctx.lineTo(150, 270);
-
-    // ctx.moveTo(350, 160);
-    // ctx.lineTo(210, 270);
-
-    // ctx.moveTo(550, 160);
-    // ctx.lineTo(15, 360);
-    
-    // ctx.strokeStyle = "#6486DB";
-    // ctx.stroke();
 
 
     // TEMPLATE CONTENT
@@ -246,47 +237,11 @@ $(document).ready(function() {
 
             templateClone.querySelector(".video-img img").setAttribute("src", json[i].path_to_video_photo);
             templateClone.querySelector(".channel__link-img").setAttribute("src", json[i].channel_image_title);
-            
             templateClone.querySelector(".link__video").setAttribute("href", `video.html${json[i].video_url}` );
             templateClone.querySelector(".name-video__link").innerHTML = json[i].video_title;
             templateClone.querySelector(".channel-name__link").innerHTML = json[i].channel_title;
-
             templateClone.querySelector(".video-content__number-views").innerHTML = formatNumber(String(json[i].views_count));
-            
             templateClone.querySelector(".video-content__metadata").innerHTML = json[i].video_age;
-            
-            
-            
-            
-
-            // if (viewsCount <= 9000) {
-            //     templateClone.querySelector(".video-content__number-views").innerHTML = `${viewsCount.substring(0, 1)}K views`;
-            // } else if (viewsCount <= 99000) {
-            //     templateClone.querySelector(".video-content__number-views").innerHTML = `${viewsCount.substring(0, 2)}K views`;
-            // } else if (viewsCount <= 999000) {
-            //     templateClone.querySelector(".video-content__number-views").innerHTML = `${viewsCount.substring(0, 3)}K views`;
-            // } else if (viewsCount <= 9000000) {
-            //     templateClone.querySelector(".video-content__number-views").innerHTML = `${viewsCount.substring(0, 1)}M views`;
-            // }
-            // else {
-            //     templateClone.querySelector(".video-content__number-views").innerHTML = `${viewsCount} views`;
-            // }
-
-            // if (viewsCount.length == 5) {
-            //     templateClone.querySelector(".video-content__number-views").innerHTML = `${viewsCount.substring(0, 2)}K views`;
-            // }
-            // else if (viewsCount.length == 6) {
-            //     templateClone.querySelector(".video-content__number-views").innerHTML = `${viewsCount.substring(0, 3)}K views`;
-            // }
-            // else if (viewsCount.length == 7) {
-            //     templateClone.querySelector(".video-content__number-views").innerHTML = `${viewsCount.substring(0, 1)}.${viewsCount.substring(1, 2)}M view`;
-            // }
-            // else if (viewsCount.length == 8) {
-            //     templateClone.querySelector(".video-content__number-views").innerHTML = `${viewsCount.substring(0, 2)}M view`;
-            // }
-            // else {
-            //     templateClone.querySelector(".video-content__number-views").innerHTML = `${viewsCount} views`;
-            // }
 
             for (let j = 0; j < json[i].category.length; j++) {
                 if (json[i].category[j] == "top_10_for_the_week") {
@@ -306,12 +261,6 @@ $(document).ready(function() {
             // content[0].append(templateClone);
         }
     });
-
-
-    // FILTER CATEGORY
-    // $(".category__btn").click(function() {
-        
-    // });
 
 
     // LOCAL STORAGE

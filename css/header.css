@@ -327,6 +327,81 @@
     border-radius: 10px;
     background: linear-gradient(180deg, #000 -36.8%, #6486DB 444.84%);
 }
+.right-bar-avatar {
+    display: none;
+
+    padding: 20px 0;
+
+    width: max-content;
+}
+.right-bar-avatar__item {
+}
+.right-bar-avatar__item:not(:last-child):after {
+    content: '';
+
+    display: block;
+
+    margin: 15px 0;
+
+    width: 100%;
+    height: 1px;
+
+    background-color: var(--bg-color-revers);
+}
+.right-bar-avatar__link {
+    display: flex;
+    align-items: center;
+
+    margin: 0 25px;
+
+    transition: all .5s ease;
+}
+.right-bar-avatar__link:not(:last-child) {
+    margin-bottom: 10px;
+}
+.right-bar-avatar__link:hover {
+    opacity: 0.5;
+}
+.right-bar-avatar__account {
+    display: flex;
+    align-items: center;
+}
+.right-bar-avatar__img {
+    margin-right: 15px;
+
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+    overflow: hidden;
+}
+.right-bar-avatar__inner {
+}
+.right-bar-avatar__name {
+    margin-bottom: 3px;
+
+    font-size: 15px;
+}
+.right-bar-avatar__email {
+    font-size: 13px;
+
+    opacity: 0.8;
+}
+.right-bar-avatar__icon {
+    margin-right: 10px;
+
+    /* width: 20px;
+    height: 20px; */
+}
+.right-bar-avatar__icon svg {
+    /* min-width: 100%;
+    min-height: 100%; */
+    width: 20px;
+    height: 20px;
+}
+.right-bar-avatar__text {
+    opacity: 0.8;
+}
 .right-bar__menu-video {
     display: none;
 }
