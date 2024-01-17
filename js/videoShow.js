@@ -40,10 +40,11 @@ $(document).ready(function() {
 });
 
 
-
-
 let getUrl = window.location.search;
 console.log(getUrl);
+
+let param = (new URL(document.location).searchParams);
+console.log(param.get("channel"));
 
 let url = "../database/listVideo.json";
 

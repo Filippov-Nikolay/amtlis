@@ -414,44 +414,133 @@
                     </button>
                 </div>
                 <div class="header-right-bar">
-                    <a class="header-right-bar__link" href="#">
-                        <svg class="header-right-bar__svg" width="23" height="22" viewBox="0 0 23 22" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M1 5.28571C1 2.91879 3.01473 1 5.5 1H17.5C19.9854 1 22 2.91879 22 5.28571V16.7143C22 19.0813 19.9854 21 17.5 21H5.5C3.01473 21 1 19.0813 1 16.7143V5.28571Z"
-                                stroke="white" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M1 5H22" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M1 17H22" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M8 1V5" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M8 17V21" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M16 1V5" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M16 17V21" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </a>
-                    <a class="header-right-bar__link" href="#">
-                        <svg class="header-right-bar__svg" width="22" height="23" viewBox="0 0 22 23" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M20.8365 17.3154L19.9195 15.9423C18.3357 13.6808 17.5021 11.0154 17.5021 8.26923C17.5021 5.36154 15.5014 3.01923 12.8339 2.21154C12.5838 1.48462 11.8336 1 11 1C10.1664 1 9.41616 1.48462 9.16608 2.21154C6.49856 3.01923 4.49792 5.36154 4.49792 8.26923C4.49792 11.0154 3.66432 13.6808 2.08047 15.9423L1.16351 17.3154C0.746712 17.9615 1.16351 18.7692 1.99711 18.7692H20.0029C20.8365 18.7692 21.2533 17.9615 20.8365 17.3154Z"
-                                stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                            <path
-                                d="M14.3336 18.7693C14.3336 20.5462 12.8331 22.0001 10.9992 22.0001C9.16528 22.0001 7.66479 20.5462 7.66479 18.7693"
-                                stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </a>
-                    <a class="header-right-bar__link header-right-bar__search" href="#">
-                        <svg class="search-form__svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M17.9995 18L21.9995 22" stroke="white" stroke-linecap="round"
-                                stroke-linejoin="round"></path>
-                            <path
-                                d="M19.9995 11C19.9995 15.9706 15.9701 20 10.9995 20C6.02895 20 1.99951 15.9706 1.99951 11C1.99951 6.02943 6.02895 2 10.9995 2C15.9701 2 19.9995 6.02943 19.9995 11Z"
-                                stroke="white"></path>
-                        </svg>
-                    </a>
-                    <a class="header-right-bar__link header-right-bar__avatar" href="#">
-                        <img class="header-right-bar__img" src="img/accounts/Avatar.jpg" alt="account">
-                    </a>
+                    <div class="header-right-bar__link">
+                        <button class="header-right-bar__video">
+                            <svg class="header-right-bar__svg" width="23" height="22" viewBox="0 0 23 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1 5.28571C1 2.91879 3.01473 1 5.5 1H17.5C19.9854 1 22 2.91879 22 5.28571V16.7143C22 19.0813 19.9854 21 17.5 21H5.5C3.01473 21 1 19.0813 1 16.7143V5.28571Z"
+                                    stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M1 5H22" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M1 17H22" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M8 1V5" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M8 17V21" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M16 1V5" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M16 17V21" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <ul class="right-bar__menu right-bar__menu-video">
+                            <li class="right-bar__item">
+                                <a class="right-bar__link" href="#">
+                                    <div class="right-bar__svg">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                                            <path d="M13.0003 23.8332C18.9834 23.8332 23.8337 18.9829 23.8337 12.9998C23.8337 7.01675 18.9834 2.1665 13.0003 2.1665C7.01724 2.1665 2.16699 7.01675 2.16699 12.9998C2.16699 18.9829 7.01724 23.8332 13.0003 23.8332Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M13.4604 15.4207C12.1283 16.2532 10.4004 15.2955 10.4004 13.7247V12.275C10.4004 10.7041 12.1283 9.74644 13.4604 10.579L14.6201 11.3038C15.8735 12.0872 15.8735 13.9125 14.6201 14.6958L13.4604 15.4207Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    Add new video
+                                </a>
+                            </li>
+                            <li class="right-bar__item">
+                                <a class="right-bar__link" href="#">
+                                    <div class="right-bar__svg">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                                            <path d="M3 13.5H4.11111C4.70048 13.5 5.26571 13.7318 5.68246 14.1444C6.09921 14.5569 6.33333 15.1165 6.33333 15.7V16.8C6.33333 17.3835 6.56746 17.9431 6.98421 18.3556C7.40095 18.7682 7.96619 19 8.55556 19C9.14493 19 9.71016 18.7682 10.1269 18.3556C10.5437 17.9431 10.7778 17.3835 10.7778 16.8V10.2C10.7778 9.61652 11.0119 9.05695 11.4287 8.64436C11.8454 8.23178 12.4106 8 13 8C13.5894 8 14.1546 8.23178 14.5713 8.64436C14.9881 9.05695 15.2222 9.61652 15.2222 10.2V16.8C15.2222 17.3835 15.4563 17.9431 15.8731 18.3556C16.2898 18.7682 16.8551 19 17.4444 19C18.0338 19 18.599 18.7682 19.0158 18.3556C19.4325 17.9431 19.6667 17.3835 19.6667 16.8V15.7C19.6667 15.1165 19.9008 14.5569 20.3175 14.1444C20.7343 13.7318 21.2995 13.5 21.8889 13.5H23" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    Start stream
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header-right-bar__link">
+                        <button class="header-right-bar__bell">
+                            <svg class="header-right-bar__svg" width="22" height="23" viewBox="0 0 22 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20.8365 17.3154L19.9195 15.9423C18.3357 13.6808 17.5021 11.0154 17.5021 8.26923C17.5021 5.36154 15.5014 3.01923 12.8339 2.21154C12.5838 1.48462 11.8336 1 11 1C10.1664 1 9.41616 1.48462 9.16608 2.21154C6.49856 3.01923 4.49792 5.36154 4.49792 8.26923C4.49792 11.0154 3.66432 13.6808 2.08047 15.9423L1.16351 17.3154C0.746712 17.9615 1.16351 18.7692 1.99711 18.7692H20.0029C20.8365 18.7692 21.2533 17.9615 20.8365 17.3154Z"
+                                    stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M14.3336 18.7693C14.3336 20.5462 12.8331 22.0001 10.9992 22.0001C9.16528 22.0001 7.66479 20.5462 7.66479 18.7693"
+                                    stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+
+                        <div class="right-bar__menu right-bar__menu-bell">
+                            <h3 class="right-bar__menu-title">This week</h3>
+                            <ul class="">
+                                <li class="right-bar__item">
+                                    <a class="right-bar__link-item" href="#">
+                                        <div class="right-bar__img-channel">
+                                            <img src="img/video__content/picturesChannel/Ellipse3-25.jpg" alt="">
+                                        </div>
+                                        <h2 class="right-bar__name-video">Miyagi & Эндшпиль - Narrative (Official Audio)</h2>
+                                        <div class="right-bar__video-preview">
+                                            <img src="img/video__content/picturesVideo/Rectangle321-25.jpg" alt="">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="right-bar__item">
+                                    <a class="right-bar__link-item" href="#">
+                                        <div class="right-bar__img-channel">
+                                            <img src="img/video__content/picturesChannel/Ellipse3-25.jpg" alt="">
+                                        </div>
+                                        <h2 class="right-bar__name-video">Miyagi & Эндшпиль - Narrative (Official Audio)</h2>
+                                        <div class="right-bar__video-preview">
+                                            <img src="img/video__content/picturesVideo/Rectangle321-25.jpg" alt="">
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <h3 class="right-bar__menu-title">Previously</h3>
+                            <ul class="">
+                                <li class="right-bar__item">
+                                    <a class="right-bar__link-item" href="#">
+                                        <div class="right-bar__img-channel">
+                                            <img src="img/video__content/picturesChannel/Ellipse3-25.jpg" alt="">
+                                        </div>
+                                        <h2 class="right-bar__name-video">Miyagi & Эндшпиль - Narrative (Official Audio)</h2>
+                                        <div class="right-bar__video-preview">
+                                            <img src="img/video__content/picturesVideo/Rectangle321-25.jpg" alt="">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="right-bar__item">
+                                    <a class="right-bar__link-item" href="#">
+                                        <div class="right-bar__img-channel">
+                                            <img src="img/video__content/picturesChannel/Ellipse3-25.jpg" alt="">
+                                        </div>
+                                        <h2 class="right-bar__name-video">Miyagi & Эндшпиль - Narrative (Official Audio)</h2>
+                                        <div class="right-bar__video-preview">
+                                            <img src="img/video__content/picturesVideo/Rectangle321-25.jpg" alt="">
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- !!! -->
+                    <div class="header-right-bar__link header-right-bar__search">
+                        <button class="header-right-bar__search">
+                            <svg class="search-form__svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.9995 18L21.9995 22" stroke="white" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                <path
+                                    d="M19.9995 11C19.9995 15.9706 15.9701 20 10.9995 20C6.02895 20 1.99951 15.9706 1.99951 11C1.99951 6.02943 6.02895 2 10.9995 2C15.9701 2 19.9995 6.02943 19.9995 11Z"
+                                    stroke="white"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="header-right-bar__link">
+                        <button class="header-right-bar__avatar">
+                            <img class="header-right-bar__img" src="img/accounts/Avatar.jpg" alt="account">
+                        </button>
+
+                        
+                    </div>
                 </div>
             </nav>
         </div>
@@ -641,6 +730,7 @@
 
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/slickMain.js"></script>
     <script src="js/main.js"></script>
 </body>
 
