@@ -3,7 +3,7 @@
     padding-bottom: 60px;
 }
 .video-about {
-    display: grid;
+    display: inline-grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 30px 15px;
 
