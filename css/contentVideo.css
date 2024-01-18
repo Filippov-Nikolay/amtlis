@@ -3,7 +3,7 @@
     padding-bottom: 60px;
 }
 .video-about {
-    display: grid;
+    display: inline-grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 30px 15px;
 
@@ -30,6 +30,7 @@
 }
 .video__item {
     /* width: min-content; */
+    max-width: min-content;
 }
 .link__video {
     /* margin-bottom: 10px; */
@@ -70,12 +71,16 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
 
+    font-size: 16px;
+
     color: #fff;
 }
 .channel-name__link {
     margin-top: 5px;
 
     max-width: fit-content;
+
+    font-size: 13px;
 
     color: #fff;
 }

@@ -33,134 +33,57 @@ $(document).ready(function() {
     });
 
 
-    // SLICK SLIDER
-    $('.slider-for').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        fade: true,
-        asNavFor: '.slider-nav'
-    });
-    $('.slider-nav').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        asNavFor: '.slider-for',
-        centerMode: true,
-        focusOnSelect: true,
-        responsive: [
-            {
-                breakpoint: 570,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                }
-            }
-        ]
-    });
-
-
-    // CATEGORY
-    let isLongClick = true;
-
-    // $(".category__slider").slick({
-    //     slidesToShow: 1,
-    //     infinite: false,
-    //     arrows: false,
-    //     variableWidth: true
-    // });
-
-    let isDown = false;
-    let startX;
-    let scrollLeft;
-    
-    const slider = document.querySelector('.category__slider'); // замените '.items' на селектор вашего элемента
-
-    slider.addEventListener('mousedown', (e) => {
-    isDown = true;
-    startX = e.pageX - slider.offsetLeft;
-    scrollLeft = slider.scrollLeft;
-    });
-
-    slider.addEventListener('mousemove', (e) => {
-    if(!isDown) return;
-    e.preventDefault();
-    const x = e.pageX - slider.offsetLeft;
-    const walk = x - startX;
-    slider.scrollLeft = scrollLeft - walk;
-    });
-
-    slider.addEventListener('mouseup', () => {
-    isDown = false;
-    });
-
-    slider.addEventListener('mouseleave', () => {
-    isDown = false;
-    });
-        
-    
-    $(".category__slider").mousedown(function() {
-        clickTimer = setTimeout(function() {
-            isLongClick = false;
-            console.log("Длинный клик");
-            $(".category__btn").off("click");
-        }, 250);
-    });
-    $(".category__slider").mouseup(function() {
-        clearTimeout(clickTimer);
-
-        if (isLongClick) {
-            console.log("Короткий клик");
-
-            $(".category__btn").click(function() {
-                $(".category__btn").removeClass("category__btn--active");
-                $(this).addClass("category__btn--active");
-            });
+    // RIGHT BAR
+    $(".header-right-bar__video").click(function (e) {
+        if($(".right-bar__menu-bell").attr("style") != undefined) {
+            if ($(".right-bar__menu-bell").attr("style").indexOf("block") != -1)
+                $(".right-bar__menu-bell").toggle("active");
+        }
+        if($(".right-bar-avatar").attr("style") != undefined) {
+            if ($(".right-bar-avatar").attr("style").indexOf("block") != -1)
+                $(".right-bar-avatar").toggle("active");
         }
 
-        isLongClick = true;
+        $(".right-bar__menu-video").toggle("active");
+        // $(".right-bar__menu-video").toggleClass("header-right-bar__video--active");
     });
+    $(".header-right-bar__bell").click(function (e) {
+        if($(".right-bar__menu-video").attr("style") != undefined) {
+            if ($(".right-bar__menu-video").attr("style").indexOf("block") != -1)
+                $(".right-bar__menu-video").toggle("active");
+        }
+        if($(".right-bar-avatar").attr("style") != undefined) {
+            if ($(".right-bar-avatar").attr("style").indexOf("block") != -1)
+                $(".right-bar-avatar").toggle("active");
+        }
 
+        $(".right-bar__menu-bell").toggle("active");
+        // $(".right-bar__menu-bell").toggleClass("right-bar__menu-bell--active");
+    });
+    $(".header-right-bar__avatar").click(function (e) {
+        if($(".right-bar__menu-video").attr("style") != undefined) {
+            if ($(".right-bar__menu-video").attr("style").indexOf("block") != -1)
+                $(".right-bar__menu-video").toggle("active");
+        }
+        if($(".right-bar__menu-bell").attr("style") != undefined) {
+            if ($(".right-bar__menu-bell").attr("style").indexOf("block") != -1)
+                $(".right-bar__menu-bell").toggle("active");
+        }
 
-    // BUTTON "WATCH"
-    // let canvas = document.getElementById("canvas__btn");
-    // let ctx = canvas.getContext('2d');
-
-    // canvas.height = 280;
-    // canvas.width = 640;
-
-    // ctx.moveTo(-10, 1140); // наклон нижней части, длинна вниз
-    // ctx.lineTo(2, 140); // , длина вверх
-
-    // ctx.moveTo(60, 60);
-    // ctx.lineTo(25, 270);
-
-    // ctx.moveTo(90, 180);
-    // ctx.lineTo(50, 270);
-
-    // ctx.moveTo(220, 40);
-    // ctx.lineTo(85, 270);
-
-    // ctx.moveTo(390, 10);
-    // ctx.lineTo(150, 270);
-
-    // ctx.moveTo(350, 160);
-    // ctx.lineTo(210, 270);
-
-    // ctx.moveTo(550, 160);
-    // ctx.lineTo(15, 360);
-    
-    // ctx.strokeStyle = "#6486DB";
-    // ctx.stroke();
+        $(".right-bar-avatar").toggle("active");
+        // $(".right-bar-avatar").toggleClass("right-bar-avatar--active");
+    });
 
 
     // TEMPLATE CONTENT
     let url = "../database/listVideo.json";
     let template = document.querySelector("#template");
-    let templateClone = template.content.cloneNode(true);
-    let content = $(".video-about");
 
-    console.log(templateClone);
-    console.log(content);
+    // PAGE CATEGORIES
+    let top_10_for_the_week = document.querySelector("#top_10_for_the_week .video-about");
+    let continue_watching = document.querySelector("#continue_watching .video-about");
+    let popular = document.querySelector("#popular .video-about");
+    let all = document.querySelector("#all .video-about");
 
     function formatNumber(viewsCount) {
         if (viewsCount <= 9000) {
@@ -184,112 +107,166 @@ $(document).ready(function() {
         }
     }
 
-    fetch(url)
-    .then(response => response.json()) // десериализует объект из ответа в JSON формате
-    .then(json => {
-        console.log(Object.keys(json[0]));
-        
-        let size = json.length;
-
-
-        // PAGE CATEGORIES
-        let top_10_for_the_week = document.querySelector("#top_10_for_the_week .video-about");
-        let continue_watching = document.querySelector("#continue_watching .video-about");
-        let popular = document.querySelector("#popular .video-about");
-        let all = document.querySelector("#all .video-about");
-
-        for (let i = 0; i < size; i++) {
-            templateClone = template.content.cloneNode(true);
-
-            templateClone.querySelector(".video-img img").setAttribute("src", json[i].path_to_video_photo);
-            templateClone.querySelector(".channel__link-img").setAttribute("src", json[i].channel_image_title);
-            
-            templateClone.querySelector(".link__video").setAttribute("href", `video.html${json[i].video_url}` );
-            templateClone.querySelector(".name-video__link").innerHTML = json[i].video_title;
-            templateClone.querySelector(".channel-name__link").innerHTML = json[i].channel_title;
-
-            templateClone.querySelector(".video-content__number-views").innerHTML = formatNumber(String(json[i].views_count));
-            
-            
-            
-            
-            
-
-            // if (viewsCount <= 9000) {
-            //     templateClone.querySelector(".video-content__number-views").innerHTML = `${viewsCount.substring(0, 1)}K views`;
-            // } else if (viewsCount <= 99000) {
-            //     templateClone.querySelector(".video-content__number-views").innerHTML = `${viewsCount.substring(0, 2)}K views`;
-            // } else if (viewsCount <= 999000) {
-            //     templateClone.querySelector(".video-content__number-views").innerHTML = `${viewsCount.substring(0, 3)}K views`;
-            // } else if (viewsCount <= 9000000) {
-            //     templateClone.querySelector(".video-content__number-views").innerHTML = `${viewsCount.substring(0, 1)}M views`;
-            // }
-            // else {
-            //     templateClone.querySelector(".video-content__number-views").innerHTML = `${viewsCount} views`;
-            // }
-
-            // if (viewsCount.length == 5) {
-            //     templateClone.querySelector(".video-content__number-views").innerHTML = `${viewsCount.substring(0, 2)}K views`;
-            // }
-            // else if (viewsCount.length == 6) {
-            //     templateClone.querySelector(".video-content__number-views").innerHTML = `${viewsCount.substring(0, 3)}K views`;
-            // }
-            // else if (viewsCount.length == 7) {
-            //     templateClone.querySelector(".video-content__number-views").innerHTML = `${viewsCount.substring(0, 1)}.${viewsCount.substring(1, 2)}M view`;
-            // }
-            // else if (viewsCount.length == 8) {
-            //     templateClone.querySelector(".video-content__number-views").innerHTML = `${viewsCount.substring(0, 2)}M view`;
-            // }
-            // else {
-            //     templateClone.querySelector(".video-content__number-views").innerHTML = `${viewsCount} views`;
-            // }
-
-            templateClone.querySelector(".video-content__metadata").innerHTML = json[i].video_age;
-
-            for (let j = 0; j < json[i].category.length; j++) {
-                if (json[i].category[j] == "top_10_for_the_week") {
-                    top_10_for_the_week.append(templateClone);
-                    console.log(1);
-                } else if (json[i].category[j] == "continue_watching") {
-                    continue_watching.append(templateClone);
-                    console.log(2);
-                } else if (json[i].category[j] == "popular") {
-                    popular.append(templateClone);
-                    console.log(3);
-                } else if (json[i].category[j] == "all") {
-                    all.append(templateClone);
-                    console.log(4);
-                }
-            }
-            // content[0].append(templateClone);
-        }
-    });
-
-
-    // FILTER CATEGORY
-    $(".category__btn").click(function() {
-        let filter = $(this).text();
-
+    if (template != null) {
+        let templateClone = template.content.cloneNode(true);
+        let content = $(".video-about");
+    
+        console.log(templateClone);
+        console.log(content);
+    
         fetch(url)
-            .then(response => response.json())
-            .then(json => {
-                let size = json.length;
-
-                for (let i = 0; i < size; i++) {
-                    for (let j = 0; j < json[i].category.length; j++) {
-                        
+        .then(response => response.json()) // десериализует объект из ответа в JSON формате
+        .then(json => {
+            console.log(Object.keys(json[0]));
+            
+            let size = json.length;
+    
+            for (let i = 0; i < size; i++) {
+                templateClone = template.content.cloneNode(true);
+    
+                templateClone.querySelector(".video-img img").setAttribute("src", json[i].path_to_video_photo);
+                templateClone.querySelector(".channel__link-img").setAttribute("src", json[i].channel_image_title);
+                templateClone.querySelector(".link__video").setAttribute("href", `video.html${json[i].video_url}` );
+                templateClone.querySelector(".name-video__link").innerHTML = json[i].video_title;
+                templateClone.querySelector(".channel-name__link").innerHTML = json[i].channel_title;
+                templateClone.querySelector(".video-content__number-views").innerHTML = formatNumber(String(json[i].views_count));
+                templateClone.querySelector(".video-content__metadata").innerHTML = json[i].video_age;
+    
+                for (let j = 0; j < json[i].category.length; j++) {
+                    if (json[i].category[j] == "top_10_for_the_week") {
+                        top_10_for_the_week.append(templateClone);
+                        console.log(1);
+                    } else if (json[i].category[j] == "continue_watching") {
+                        continue_watching.append(templateClone);
+                        console.log(2);
+                    } else if (json[i].category[j] == "popular") {
+                        popular.append(templateClone);
+                        console.log(3);
+                    } else if (json[i].category[j] == "all") {
+                        all.append(templateClone);
+                        console.log(4);
                     }
-                    // if (getUrl == json[i].video_url) {
-                    //     // $(".banner__title").text = json[i].video_title;
-                    //     document.querySelector(".banner__title").innerHTML = json[i].video_title;
-                    //     document.querySelector(".banner__video-name").innerHTML = json[i].channel_title;
-                    //     document.querySelectorAll(".video-info__item")[0].innerHTML = formatNumber(String(json[i].views_count));
-                    //     document.querySelectorAll(".video-info__item")[1].innerHTML = json[i].video_age;
-                    //     document.querySelector(".banner__btn").setAttribute("href", `video.html${json[i].video_url}`);
-                    //     break;
-                    // }
                 }
+                // content[0].append(templateClone);
+            }
+        });
+    }
+
+
+
+    // CATEGORY
+    let isLongClick = true;
+
+    // $(".category__slider").slick({
+    //     slidesToShow: 1,
+    //     infinite: false,
+    //     arrows: false,
+    //     variableWidth: true
+    // });
+
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+    
+    const slider = document.querySelector('.category__slider');
+    
+    if (slider) {
+        slider.addEventListener('mousedown', (e) => {
+            isDown = true;
+            startX = e.pageX - slider.offsetLeft;
+            scrollLeft = slider.scrollLeft;
+        });
+    
+        slider.addEventListener('mousemove', (e) => {
+            if(!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - slider.offsetLeft;
+            const walk = x - startX;
+            slider.scrollLeft = scrollLeft - walk;
+        });
+    
+        slider.addEventListener('mouseup', () => {
+            isDown = false;
+        });
+    
+        slider.addEventListener('mouseleave', () => {
+            isDown = false;
+        });
+    }
+
+    
+    $(".category__slider").mousedown(function() {
+        clickTimer = setTimeout(function() {
+            isLongClick = false;
+            console.log("Длинный клик");
+            $(".category__btn").off("click");
+        }, 250);
+    });
+    $(".category__slider").mouseup(function() {
+        clearTimeout(clickTimer);
+        if (isLongClick) {
+            console.log("Короткий клик ===================================");
+            $(".category__btn").on("click", function () {
+                // FILTER CATEGORY
+
+                console.log($(".video__item").remove());
+    
+                $(".category__btn").removeClass("category__btn--active");
+                $(this).addClass("category__btn--active");
+        
+                let filter = $(this).text();
+                console.log(filter);
+        
+                fetch(url)
+                    .then(response => response.json())
+                    .then(json => {
+                        let size = json.length;
+        
+                        for (let i = 0; i < size; i++) {
+                            console.log("for 1");
+                            for (let j = 0; j < json[i].category.length; j++) {
+                                console.log("for 2");
+                                if (json[i].category[j] == filter) {
+                                    // console.log(json[i].category[j], json[i]);
+    
+                                    templateClone = template.content.cloneNode(true);
+        
+                                    templateClone.querySelector(".video-img img").setAttribute("src", json[i].path_to_video_photo);
+                                    templateClone.querySelector(".channel__link-img").setAttribute("src", json[i].channel_image_title);
+                                    
+                                    templateClone.querySelector(".link__video").setAttribute("href", `video.html${json[i].video_url}` );
+                                    templateClone.querySelector(".name-video__link").innerHTML = json[i].video_title;
+                                    templateClone.querySelector(".channel-name__link").innerHTML = json[i].channel_title;
+        
+                                    templateClone.querySelector(".video-content__number-views").innerHTML = formatNumber(String(json[i].views_count));
+    
+                                    for (let k = 0; k < json[i].category.length; k++) {
+                                        console.log("for 3");
+    
+                                        if (json[i].category[k] == "top_10_for_the_week") {
+                                            top_10_for_the_week.append(templateClone);
+                                            console.log(json[i].category[k]);
+                                        } else if (json[i].category[k] == "continue_watching") {
+                                            continue_watching.append(templateClone);
+                                            console.log(json[i].category[k]);
+                                        } else if (json[i].category[k] == "popular") {
+                                            popular.append(templateClone);
+                                            console.log(json[i].category[k]);
+                                        } else if (json[i].category[k] == "all") {
+                                            all.append(templateClone);
+                                            console.log(json[i].category[k]);
+                                        }
+                                        
+                                    }
+                                }
+                            }
+                        }
+                });
+
+                $(".category__btn").off("click");
             });
+        }
+        isLongClick = true;
     });
 
 
