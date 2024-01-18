@@ -236,6 +236,7 @@
     left: 0;
     z-index: 2;
 
+    display: none;
     padding: 15px 25px;
 
     width: max-content;

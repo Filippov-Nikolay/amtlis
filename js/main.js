@@ -372,12 +372,24 @@ $(document).ready(function() {
         }
     }
 
-    if ($(".search-form__options .search-form__item").length == 0) {
-        $(".search-form__options").css("display", "none");
-    }
+    $('.search-form__input').focus(function(){
+        $(".search-form__input").keyup(displayOptions);
+        $(".search-form__input").click(displayOptions)
+    });
 
-    $(".search-form__input").change(displayOptions);
-    $(".search-form__input").keyup(displayOptions);
+    
+    $('.search-form__input').blur(function(){
+        setTimeout(function() {
+            let isItemBtn = true;
+    
+            $(".search-form__item").click(function() {
+                isItemBtn = false;
+            });
+    
+            if (isItemBtn)
+                $(".search-form__options").css("display", "none");
+        }, 100);
+    });
 
     fetch(url)
     .then(response => response.json())
