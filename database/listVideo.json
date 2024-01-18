@@ -1,14 +1,82 @@
 [
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-20.png",
-        "iframe_url": "https://www.youtube.com/embed/guJD6KVaaZE",
+        "iframe_url": "https://www.youtube.com/embed/guJD6KVaaZE?&rel=0&showinfo=0",
         "video_url": "?channel=SKVOT&v=guJD6KVaaZE",
         "video_title": "Вакуумная упаковка cloth simulation с лого в Cinema 4D",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-20.png",
         "channel_title": "SKVOT",
-        "views_count": 12000,
+        "views_count": 122000,
+        "likes_count": 54343,
+        "subscribers_count": 345687,
         "video_age": "1 year ago",
         "category": ["entertaining", "top_10_for_the_week", "all"]
+    },
+    {
+        "path_to_video_photo": "img/video__content/picturesVideo/skvot_one.jpg",
+        "video_title": "Як знайти себе в ілюстрації. Лекція-перформанс Braulio Amado",
+        "video_url": "?channel=SKVOT&v=guJD545VaaZE",
+        "iframe_url": "https://www.youtube.com/embed/9qLVqNM3IXI?&rel=0&showinfo=0",
+        "channel_title": "SKVOT",
+        "channel_image_title": "img/video__content/picturesChannel/Ellipse3-20.png",
+        "views_count": 120500,
+        "likes_count": 150,
+        "subscribers_count": 345687,
+        "video_age": "2 year ago",
+        "category": ["all"]
+    },
+    {
+        "path_to_video_photo": "img/video__content/picturesVideo/skvot_two.jpg",
+        "video_title": "Комунікації в умовах невизначеності",
+        "video_url": "?channel=SKVOT&v=guJD454aaZE",
+        "iframe_url": "https://www.youtube.com/embed/ErJ-ee_vlCI?&rel=0&showinfo=0",
+        "channel_title": "SKVOT",
+        "channel_image_title": "img/video__content/picturesChannel/Ellipse3-20.png",
+        "views_count": 1245000,
+        "likes_count": 6500,
+        "subscribers_count": 345687,
+        "video_age": "6 year ago",
+        "category": ["all"]
+    },
+    {
+        "path_to_video_photo": "img/video__content/picturesVideo/skvot_three.jpg",
+        "video_title": "Пошук, розвиток та розробка ідеї фільму",
+        "video_url": "?channel=SKVOT&v=guJD6232aaZE",
+        "iframe_url": "https://www.youtube.com/embed/FSZrP7QFA_8?&rel=0&showinfo=0",
+        "channel_title": "SKVOT",
+        "channel_image_title": "img/video__content/picturesChannel/Ellipse3-20.png",
+        "views_count": 120340,
+        "likes_count": 12500,
+        "subscribers_count": 345687,
+        "video_age": "2 year ago",
+        "category": ["all"]
+    },
+    {
+        "path_to_video_photo": "img/video__content/picturesVideo/skvot_four.jpg",
+        "video_title": "Як швидко генерувати ідеї для ілюстрацій. Олесь Дерега",
+        "video_url": "?channel=SKVOT&v=guJD6343aaZE",
+        "iframe_url": "https://www.youtube.com/embed/hp2ykmfOv_0?&rel=0&showinfo=0",
+        "channel_title": "SKVOT",
+        "channel_image_title": "img/video__content/picturesChannel/Ellipse3-20.png",
+        "views_count": 120200,
+        "likes_count": 53497,
+        "subscribers_count": 345687,
+        "video_age": "1 year ago",
+        "category": ["all"]
+    },
+    {
+      
+        "path_to_video_photo": "img/video__content/picturesVideo/skvot_five.jpg",
+        "video_title": "ЯК ЗМІНЮЄТЬСЯ АРХІТЕКТУРА ПІД ВПЛИВОМ АІ",
+        "video_url": "?channel=SKVOT&v=guJD623aaZE",
+        "iframe_url": "https://www.youtube.com/embed/0QQw7sv3f2M?&rel=0&showinfo=0",
+        "channel_title": "SKVOT",
+        "channel_image_title": "img/video__content/picturesChannel/Ellipse3-20.png",
+        "views_count": 12400,
+        "likes_count": 665,
+        "subscribers_count": 345687,
+        "video_age": "8 year ago",
+        "category": ["all"]
     },
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-21.png",
@@ -18,8 +86,71 @@
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-21.png",
         "channel_title": "Dadi Freyr",
         "views_count": 45000000,
+        "likes_count": 436121,
+        "subscribers_count": 435587,
         "video_age": "3 years ago",
         "category": ["music", "top_10_for_the_week", "all"]
+    },
+    {
+        "path_to_video_photo": "img/video__content/picturesVideo/dadi_one.jpg",
+        "video_title": "Як знайти себе в ілюстрації. Лекція-перформанс Braulio Amado",
+        "video_url": "?channel=DadiFreyr&v=guJD545VaaZE",
+        "channel_image_title": "img/video__content/picturesChannel/Ellipse3-21.png",
+        "channel_title": "Dadi Freyr",
+        "views_count": 120500,
+        "likes_count": 6556,
+        "subscribers_count": 435587,
+        "video_age": "2 year ago",
+        "category": ["all"]
+    },
+    {
+        "path_to_video_photo": "img/video__content/picturesVideo/dadi_two.jpg",
+        "video_title": "Комунікації в умовах невизначеності",
+        "video_url": "?channel=DadiFreyr&v=guJ3454aaZE",
+        "channel_image_title": "img/video__content/picturesChannel/Ellipse3-21.png",
+        "channel_title": "Dadi Freyr",
+        "views_count": 1245000,
+        "likes_count": 84670,
+        "subscribers_count": 435587,
+        "video_age": "6 year ago",
+        "category": ["all"]
+    },
+    {
+        "path_to_video_photo": "img/video__content/picturesVideo/dadi_three.jpg",
+        "video_title": "Пошук, розвиток та розробка ідеї фільму",
+        "video_url": "?channel=DadiFreyr&v=guJ86232aaZE",
+        "channel_image_title": "img/video__content/picturesChannel/Ellipse3-21.png",
+        "channel_title": "Dadi Freyr",
+        "views_count": 120340,
+        "likes_count": 5723,
+        "subscribers_count": 435587,
+        "video_age": "2 year ago",
+        "category": ["all"]
+    },
+    {
+        "path_to_video_photo": "img/video__content/picturesVideo/dadi_four.jpg",
+        "video_title": "Як швидко генерувати ідеї для ілюстрацій. Олесь Дерега",
+        "video_url": "?channel=DadiFreyr&v=guJ1D634aaZE",
+        "channel_image_title": "img/video__content/picturesChannel/Ellipse3-21.png",
+        "channel_title": "Dadi Freyr",
+        "views_count": 120200,
+        "likes_count": 8503,
+        "subscribers_count": 435587,
+        "video_age": "1 year ago",
+        "category": ["all"]
+    },
+    {
+      
+        "path_to_video_photo": "img/video__content/picturesVideo/dadi_five.jpg",
+        "video_title": "ЯК ЗМІНЮЄТЬСЯ АРХІТЕКТУРА ПІД ВПЛИВОМ АІ",
+        "video_url": "?channel=DadiFreyr&v=gu0D623aaZE",
+        "channel_image_title": "img/video__content/picturesChannel/Ellipse3-21.png",
+        "channel_title": "Dadi Freyr",
+        "views_count": 12400,
+        "likes_count": 5400,
+        "subscribers_count": 435587,
+        "video_age": "8 year ago",
+        "category": ["all"]
     },
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-22.png",
@@ -29,6 +160,8 @@
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-22.png",
         "channel_title": "the bootleg boy",
         "views_count": 6000000,
+        "likes_count": 43535,
+        "subscribers_count": 125587,
         "video_age": "1 days ago",
         "category": ["music", "top_10_for_the_week", "all"]
     },
@@ -40,6 +173,8 @@
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-23.png",
         "channel_title": "St3inway",
         "views_count": 6000000,
+        "likes_count": 543324,
+        "subscribers_count": 3265455,
         "video_age": "2 weeks ago",
         "category": ["music", "top_10_for_the_week", "all"]
     },
@@ -51,6 +186,8 @@
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-16.png",
         "channel_title": "Friends Of Motion",
         "views_count": 27000,
+        "likes_count": 3500,
+        "subscribers_count": 44555,
         "video_age": "8 months ago",
         "category": ["tutorial", "continue_watching", "all"]
     },
@@ -62,6 +199,8 @@
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-17.png",
         "channel_title": "Loreen",
         "views_count": 2200000,
+        "likes_count": 85432,
+        "subscribers_count": 926455,
         "video_age": "4 weeks ago",
         "category": ["music", "continue_watching", "all"]
     },
@@ -73,6 +212,8 @@
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-18.png",
         "channel_title": "XUYU Design Tutorials",
         "views_count": 2400,
+        "likes_count": 36646,
+        "subscribers_count": 54,
         "video_age": "1 year ago",
         "category": ["tutorial", "continue_watching", "all"]
     },
@@ -84,6 +225,8 @@
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-24.png",
         "channel_title": "Demin Vladimir",
         "views_count": 2900000,
+        "likes_count": 645600,
+        "subscribers_count": 746535,
         "video_age": "3 years ago",
         "category": ["entertaining", "continue_watching", "all"]
     },
@@ -95,6 +238,8 @@
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-12.png",
         "channel_title": "_ Boisvert",
         "views_count": 4600000,
+        "likes_count": 8340,
+        "subscribers_count": 576545,
         "video_age": "3 years ago",
         "category": ["music", "popular", "all"]
     },
@@ -106,6 +251,8 @@
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-13.png",
         "channel_title": "Universal Pictures",
         "views_count": 21000000,
+        "likes_count": 1730,
+        "subscribers_count": 127655,
         "video_age": "2 weeks ago",
         "category": ["movie_trailer", "popular", "all"]
     },
@@ -117,6 +264,8 @@
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-14.png",
         "channel_title": "ontyj",
         "views_count": 44000000,
+        "likes_count": 134340,
+        "subscribers_count": 36573436,
         "video_age": "3 years ago",
         "category": ["entertaining", "popular", "all"]
     },
@@ -128,6 +277,8 @@
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-15.png",
         "channel_title": "KuroKiitsuneSama",
         "views_count": 6000000,
+        "likes_count": 625650,
+        "subscribers_count": 9867545,
         "video_age": "1 year ago",
         "category": ["music", "popular", "all"]
     },
@@ -139,6 +290,8 @@
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-0.png",
         "channel_title": "Bandit Runner",
         "views_count": 1600000,
+        "likes_count": 91372,
+        "subscribers_count": 7545756,
         "video_age": "1 year ago",
         "category": ["music", "all"]
     },
@@ -150,6 +303,8 @@
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-1.png",
         "channel_title": "Joji Edits",
         "views_count": 645000000,
+        "likes_count": 78150,
+        "subscribers_count": 8569095,
         "video_age": "6 months ago",
         "category": ["music", "all"]
     },
@@ -161,6 +316,8 @@
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-2.png",
         "channel_title": "Daft Punk",
         "views_count": 81000000,
+        "likes_count": 143540,
+        "subscribers_count": 579734343,
         "video_age": "14 years ago",
         "category": ["music", "all"]
     },
@@ -172,6 +329,8 @@
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-3.png",
         "channel_title": "ELECTRONICOS FANTASTICOS!",
         "views_count": 12000000,
+        "likes_count": 14300,
+        "subscribers_count": 9386745,
         "video_age": "2 years ago",
         "category": ["music", "entertaining", "all"]
     },
@@ -183,6 +342,8 @@
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-4.png",
         "channel_title": "Dandi Yakuza",
         "views_count": 2900000,
+        "likes_count": 97750,
+        "subscribers_count": 534356,
         "video_age": "2 months ago",
         "category": ["music", "all"]
     },
@@ -194,6 +355,8 @@
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-5.png",
         "channel_title": "Ninja Tune",
         "views_count": 18000000,
+        "likes_count": 1553,
+        "subscribers_count": 434762,
         "video_age": "13 years ago",
         "category": ["music", "all"]
     },
@@ -205,6 +368,8 @@
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-6.png",
         "channel_title": "nieu latyn",
         "views_count": 55000,
+        "likes_count": 95040,
+        "subscribers_count": 3546,
         "video_age": "3 years ago",
         "category": ["music", "all"]
     },
@@ -216,6 +381,8 @@
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-7.png",
         "channel_title": "Crumb The Band",
         "views_count": 44000000,
+        "likes_count": 12670,
+        "subscribers_count": 45466,
         "video_age": "5 years ago",
         "category": ["music", "all"]
     },
@@ -227,6 +394,8 @@
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-8.png",
         "channel_title": "Cozy Nordic",
         "views_count": 636000,
+        "likes_count": 11040,
+        "subscribers_count": 75653,
         "video_age": "3 months ago",
         "category": ["music", "all"]
     },
@@ -238,6 +407,8 @@
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-9.png",
         "channel_title": "Index Edition",
         "views_count": 92000,
+        "likes_count": 25560,
+        "subscribers_count": 35555,
         "video_age": "4 years ago",
         "category": ["music", "all"]
     },
@@ -249,6 +420,8 @@
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-10.png",
         "channel_title": "wildan ar",
         "views_count": 571000,
+        "likes_count": 15600,
+        "subscribers_count": 23255,
         "video_age": "5 years ago",
         "category": ["music", "all"]
     },
@@ -260,6 +433,8 @@
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-11.png",
         "channel_title": "Brandon Acker",
         "views_count": 1200000,
+        "likes_count": 45000,
+        "subscribers_count": 133546,
         "video_age": "3 years ago",
         "category": ["music", "entertaining", "all"]
     },
@@ -271,6 +446,8 @@
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-25.jpg",
         "channel_title": "Hajime",
         "views_count": 233000,
+        "likes_count": 3400,
+        "subscribers_count": 67684,
         "video_age": "2 days ago",
         "category": ["music", "popular", "all"]
     },
@@ -282,6 +459,8 @@
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-26.jpg",
         "channel_title": "LP",
         "views_count": 534000000,
+        "likes_count": 1000,
+        "subscribers_count": 77678893,
         "video_age": "7 years ago",
         "category": ["music", "all"]
     },
@@ -293,6 +472,8 @@
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-27.jpg",
         "channel_title": "ENLEO",
         "views_count": 7300000,
+        "likes_count": 145000,
+        "subscribers_count": 3546875,
         "video_age": "1 year ago",
         "category": ["music", "all"]
     },
@@ -304,6 +485,8 @@
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-28.jpg",
         "channel_title": "The Weeknd",
         "views_count": 1440663631,
+        "likes_count": 12000,
+        "subscribers_count": 3455758455,
         "video_age": "3 years ago",
         "category": ["music", "all"]
     }
