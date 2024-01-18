@@ -1,7 +1,7 @@
 [
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-20.png",
-        "iframe_url": "https://www.youtube.com/embed/guJD6KVaaZE?&rel=0&showinfo=0",
+        "iframe_url": "https://www.youtube.com/embed/guJD6KVaaZE?autoplay=1&rel=0&showinfo=0",
         "video_url": "?channel=SKVOT&v=guJD6KVaaZE",
         "video_title": "Вакуумная упаковка cloth simulation с лого в Cinema 4D",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-20.png",
@@ -16,7 +16,7 @@
         "path_to_video_photo": "img/video__content/picturesVideo/skvot_one.jpg",
         "video_title": "Як знайти себе в ілюстрації. Лекція-перформанс Braulio Amado",
         "video_url": "?channel=SKVOT&v=guJD545VaaZE",
-        "iframe_url": "https://www.youtube.com/embed/9qLVqNM3IXI?&rel=0&showinfo=0",
+        "iframe_url": "https://www.youtube.com/embed/9qLVqNM3IXI?autoplay=1&rel=0&showinfo=0",
         "channel_title": "SKVOT",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-20.png",
         "views_count": 120500,
@@ -29,7 +29,7 @@
         "path_to_video_photo": "img/video__content/picturesVideo/skvot_two.jpg",
         "video_title": "Комунікації в умовах невизначеності",
         "video_url": "?channel=SKVOT&v=guJD454aaZE",
-        "iframe_url": "https://www.youtube.com/embed/ErJ-ee_vlCI?&rel=0&showinfo=0",
+        "iframe_url": "https://www.youtube.com/embed/ErJ-ee_vlCI?autoplay=1&rel=0&showinfo=0",
         "channel_title": "SKVOT",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-20.png",
         "views_count": 1245000,
@@ -42,7 +42,7 @@
         "path_to_video_photo": "img/video__content/picturesVideo/skvot_three.jpg",
         "video_title": "Пошук, розвиток та розробка ідеї фільму",
         "video_url": "?channel=SKVOT&v=guJD6232aaZE",
-        "iframe_url": "https://www.youtube.com/embed/FSZrP7QFA_8?&rel=0&showinfo=0",
+        "iframe_url": "https://www.youtube.com/embed/FSZrP7QFA_8?autoplay=1&rel=0&showinfo=0",
         "channel_title": "SKVOT",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-20.png",
         "views_count": 120340,
@@ -55,7 +55,7 @@
         "path_to_video_photo": "img/video__content/picturesVideo/skvot_four.jpg",
         "video_title": "Як швидко генерувати ідеї для ілюстрацій. Олесь Дерега",
         "video_url": "?channel=SKVOT&v=guJD6343aaZE",
-        "iframe_url": "https://www.youtube.com/embed/hp2ykmfOv_0?&rel=0&showinfo=0",
+        "iframe_url": "https://www.youtube.com/embed/hp2ykmfOv_0?autoplay=1&rel=0&showinfo=0",
         "channel_title": "SKVOT",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-20.png",
         "views_count": 120200,
@@ -69,7 +69,7 @@
         "path_to_video_photo": "img/video__content/picturesVideo/skvot_five.jpg",
         "video_title": "ЯК ЗМІНЮЄТЬСЯ АРХІТЕКТУРА ПІД ВПЛИВОМ АІ",
         "video_url": "?channel=SKVOT&v=guJD623aaZE",
-        "iframe_url": "https://www.youtube.com/embed/0QQw7sv3f2M?&rel=0&showinfo=0",
+        "iframe_url": "https://www.youtube.com/embed/0QQw7sv3f2M?autoplay=1&rel=0&showinfo=0",
         "channel_title": "SKVOT",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-20.png",
         "views_count": 12400,
@@ -80,7 +80,7 @@
     },
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-21.png",
-        "iframe_url": "https://www.youtube.com/embed/VFZNvj-HfBU",
+        "iframe_url": "https://www.youtube.com/embed/VFZNvj-HfBU?autoplay=1&rel=0&showinfo=0",
         "video_url": "?channel=DadiFreyr&v=VFZNvj-HfBU",
         "video_title": "Dadi Freyr (Dadi & Gagnamagnid) – Think About Things (Official Video)",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-21.png",
@@ -154,7 +154,7 @@
     },
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-22.png",
-        "iframe_url": "https://www.youtube.com/embed/7YmNvCy30FU",
+        "iframe_url": "https://www.youtube.com/embed/7YmNvCy30FU?autoplay=1&rel=0&showinfo=0",
         "video_url": "?channel=St3inway&v=AbCdEfGhIjK",
         "video_title": "Enchanted Forest",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-22.png",
@@ -167,7 +167,7 @@
     },
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-23.png",
-        "iframe_url": "https://www.youtube.com/embed/0J4NKoOlUeo",
+        "iframe_url": "https://www.youtube.com/embed/0J4NKoOlUeo?autoplay=1&rel=0&showinfo=0",
         "video_url": "?channel=RushE&v=12aB34cD56e",
         "video_title": "Rush E",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-23.png",
@@ -180,7 +180,7 @@
     },
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-16.png",
-        "iframe_url": "https://www.youtube.com/embed/0XosOdyghIM",
+        "iframe_url": "https://www.youtube.com/embed/0XosOdyghIM?autoplay=1&rel=0&showinfo=0",
         "video_url": "?channel=FriendsOfMotion&v=78FgHi90JkL",
         "video_title": "C4D 2023 Tutorial: Abstract Flowers with Hair, Dynamics and Redshift",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-16.png",
@@ -193,7 +193,7 @@
     },
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-17.png",
-        "iframe_url": "https://www.youtube.com/embed/zU-rDV6LiH4",
+        "iframe_url": "https://www.youtube.com/embed/zU-rDV6LiH4?autoplay=1&rel=0&showinfo=0",
         "video_url": "?channel=Loreen&v=7dfGhJkLm2n",
         "video_title": "Loreen - Tattoo (Acoustic)",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-17.png",
@@ -206,7 +206,7 @@
     },
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-18.png",
-        "iframe_url": "https://www.youtube.com/embed/DR7tH0Fe_uY",
+        "iframe_url": "https://www.youtube.com/embed/DR7tH0Fe_uY?autoplay=1&rel=0&showinfo=0",
         "video_url": "?channel=XUYUDesignTutorials&v=XyZ123456AbC",
         "video_title": "3D Text Topography With Adobe illustrator || Adobe Illustrator",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-18.png",
@@ -232,7 +232,7 @@
     },
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-12.png",
-        "iframe_url": "https://www.youtube.com/embed/NZh5YxDpuK4",
+        "iframe_url": "https://www.youtube.com/embed/NZh5YxDpuK4?autoplay=1&rel=0&showinfo=0",
         "video_url": "?channel=_Boisvert&v=Z1bC5eFgH9i",
         "video_title": "Take Care",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-12.png",
@@ -245,7 +245,7 @@
     },
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-13.png",
-        "iframe_url": "https://www.youtube.com/embed/f-zqS2CiZqw",
+        "iframe_url": "https://www.youtube.com/embed/f-zqS2CiZqw?autoplay=1&rel=0&showinfo=0",
         "video_url": "?channel=UniversalPictures&v=Q8wR2tY6uI0",
         "video_title": "Five Nights At Freddy's | Official Teaser",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-13.png",
@@ -258,7 +258,7 @@
     },
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-14.png",
-        "iframe_url": "https://www.youtube.com/embed/Y1HGgICqZ3c",
+        "iframe_url": "https://www.youtube.com/embed/Y1HGgICqZ3c?autoplay=1&rel=0&showinfo=0",
         "video_url": "?channel=ontyj&v=P7oN4lM3k9J",
         "video_title": "I used \"deep fakes\" to fix the Lion King",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-14.png",
@@ -271,7 +271,7 @@
     },
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-15.png",
-        "iframe_url": "https://www.youtube.com/embed/ugnyM69LN54",
+        "iframe_url": "https://www.youtube.com/embed/ugnyM69LN54?autoplay=1&rel=0&showinfo=0",
         "video_url": "?channel=KuroKiitsuneSama&v=X2zV6cB8xQ1",
         "video_title": "BABYMETAL // CATCH ME IF YOU CAN",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-15.png",
@@ -284,7 +284,7 @@
     },
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-0.png",
-        "iframe_url": "https://www.youtube.com/embed/9HUhqlPxzAc",
+        "iframe_url": "https://www.youtube.com/embed/9HUhqlPxzAc?autoplay=1&rel=0&showinfo=0",
         "video_url": "?channel=BanditRunner&v=K5dL9fG3hS6",
         "video_title": "If Arctic Monkeys wrote Sweater Weather",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-0.png",
@@ -297,7 +297,7 @@
     },
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-1.png",
-        "iframe_url": "https://www.youtube.com/embed/iQbpwSCMcF4",
+        "iframe_url": "https://www.youtube.com/embed/iQbpwSCMcF4?autoplay=1&rel=0&showinfo=0",
         "video_url": "?channel=JojiEdits&v=J4pO7rT2uW0",
         "video_title": "Joji - SMITHEREENS Full Album (Pacific Coast Highway)",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-1.png",
@@ -310,7 +310,7 @@
     },
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-2.png",
-        "iframe_url": "https://www.youtube.com/embed/sOS9aOIXPEk",
+        "iframe_url": "https://www.youtube.com/embed/sOS9aOIXPEk?autoplay=1&rel=0&showinfo=0",
         "video_url": "?channel=DaftPunk&v=M1nY8bZ9xQ3",
         "video_title": "Daft Punk - Something About Us (Official Video)",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-2.png",
@@ -323,7 +323,7 @@
     },
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-3.png",
-        "iframe_url": "https://www.youtube.com/embed/A0VYsiMtrNE",
+        "iframe_url": "https://www.youtube.com/embed/A0VYsiMtrNE?autoplay=1&rel=0&showinfo=0",
         "video_url": "?channel=ELECTRONICOSFANTASTICOS!&v=U7vC3xG2hR5",
         "video_title": "電磁祭囃子 in NEO TOKYO 🏮",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-3.png",
@@ -336,7 +336,7 @@
     },
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-4.png",
-        "iframe_url": "https://www.youtube.com/embed/2aOs61bXEPY",
+        "iframe_url": "https://www.youtube.com/embed/2aOs61bXEPY?autoplay=1&rel=0&showinfo=0",
         "video_url": "?channel=DandiYakuza&v=I9oL2mN7pK4",
         "video_title": "Sinematik Video Estetik | Cinematic Video Aesthetic | Beautiful Sunset",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-4.png",
@@ -349,7 +349,7 @@
     },
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-5.png",
-        "iframe_url": "https://www.youtube.com/embed/NhheiPTdZCw",
+        "iframe_url": "https://www.youtube.com/embed/NhheiPTdZCw?autoplay=1&rel=0&showinfo=0",
         "video_url": "?channel=NinjaTune&v=W6uH8rT5yZ1",
         "video_title": "Blockhead - The Music Scene",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-5.png",
@@ -362,7 +362,7 @@
     },
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-6.png",
-        "iframe_url": "https://www.youtube.com/embed/YFjUtl2Xwb4",
+        "iframe_url": "https://www.youtube.com/embed/YFjUtl2Xwb4?autoplay=1&rel=0&showinfo=0",
         "video_url": "?channel=nieulatyn&v=G3qP9wR2iL0",
         "video_title": "Takashi Ito - Thunder",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-6.png",
@@ -375,7 +375,7 @@
     },
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-7.png",
-        "iframe_url": "https://www.youtube.com/embed/BqnG_Ei35JE",
+        "iframe_url": "https://www.youtube.com/embed/BqnG_Ei35JE?autoplay=1&rel=0&showinfo=0",
         "video_url": "?channel=CrumbTheBand&v=34IjKlmN56",
         "video_title": "Crumb - Locket [Official Video]",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-7.png",
@@ -388,7 +388,7 @@
     },
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-8.png",
-        "iframe_url": "https://www.youtube.com/embed/d27KWfA2T_k",
+        "iframe_url": "https://www.youtube.com/embed/d27KWfA2T_k?autoplay=1&rel=0&showinfo=0",
         "video_url": "?channel=CozyNordic&v=78XyZ90AbC",
         "video_title": "another rainy day in sweden ~ nordic lofi mix",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-8.png",
@@ -401,7 +401,7 @@
     },
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-9.png",
-        "iframe_url": "https://www.youtube.com/embed/GxQ3PucXg8k",
+        "iframe_url": "https://www.youtube.com/embed/GxQ3PucXg8k?autoplay=1&rel=0&showinfo=0",
         "video_url": "?channel=IndexEdition&v=12MnOpQr34",
         "video_title": "Peter Tscherkassky - Outer Space",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-9.png",
@@ -414,7 +414,7 @@
     },
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-10.png",
-        "iframe_url": "https://www.youtube.com/embed/hzqJ3jP-kDM",
+        "iframe_url": "https://www.youtube.com/embed/hzqJ3jP-kDM?autoplay=1&rel=0&showinfo=0",
         "video_url": "?channel=wildanar&v=56StUvWx78",
         "video_title": "CINEMATIC ALAM",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-10.png",
@@ -427,7 +427,7 @@
     },
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-11.png",
-        "iframe_url": "https://www.youtube.com/embed/lVVf-X1Q2Qw",
+        "iframe_url": "https://www.youtube.com/embed/lVVf-X1Q2Qw?autoplay=1&rel=0&showinfo=0",
         "video_url": "?channel=BrandonAcker&v=EFgHiJKL34",
         "video_title": "The hardest piece I've ever played on guitar...",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-11.png",
@@ -440,7 +440,7 @@
     },
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-25.jpg",
-        "iframe_url": "https://www.youtube.com/embed/95NsRZP4zco",
+        "iframe_url": "https://www.youtube.com/embed/95NsRZP4zco?autoplay=1&rel=0&showinfo=0",
         "video_url": "?channel=Hajime&v=95NsRZP4zco",
         "video_title": "Miyagi & Эндшпиль - Narrative (Official Audio)",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-25.jpg",
@@ -453,7 +453,7 @@
     },
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-26.jpg",
-        "iframe_url": "https://www.youtube.com/embed/hn3wJ1_1Zsg",
+        "iframe_url": "https://www.youtube.com/embed/hn3wJ1_1Zsg?autoplay=1&rel=0&showinfo=0",
         "video_url": "?channel=LP&v=hn3wJ1_1Zsg",
         "video_title": "LP - Lost On You (Official Music Video)",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-26.jpg",
@@ -466,7 +466,7 @@
     },
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-27.jpg",
-        "iframe_url": "https://www.youtube.com/embed/wzdhCmIU9NU",
+        "iframe_url": "https://www.youtube.com/embed/wzdhCmIU9NU?autoplay=1&rel=0&showinfo=0",
         "video_url": "?channel=ENLEO&v=icaSda6Rrrg",
         "video_title": "ENLEO - ВЕДИ МЕНЕ В ХРАМ (TAKE ME TO CHURCH УКРАЇНСЬКОЮ)",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-27.jpg",
@@ -479,7 +479,7 @@
     },
     {
         "path_to_video_photo": "img/video__content/picturesVideo/Rectangle321-28.jpg",
-        "iframe_url": "https://www.youtube.com/embed/XXYlFuWEuKI",
+        "iframe_url": "https://www.youtube.com/embed/XXYlFuWEuKI?autoplay=1&rel=0&showinfo=0",
         "video_url": "?channel=TheWeeknd&v=XXYlFuWEuKI",
         "video_title": "The Weeknd - Save Your Tears (Official Music Video)",
         "channel_image_title": "img/video__content/picturesChannel/Ellipse3-28.jpg",
