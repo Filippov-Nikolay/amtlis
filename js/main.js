@@ -338,4 +338,55 @@ $(document).ready(function() {
         setTimeout(function() {window.location = href}, 800);
         return false;
     });
+
+
+    // SEARCH
+    let videoNames = [];
+
+    function getOptions(word, videoNames) {
+        return videoNames.filter(s => {
+            // Определение на совпадение в инпут
+
+            const regex = new RegExp(word, 'gi');
+
+            return s.video_title.match(regex);
+        })
+    }
+
+    function displayOptions() {
+        console.log("value -> ", this.value);
+
+        const options = getOptions(this.value, videoNames);
+        console.log("options -> ", options);
+
+        const html = options.map(videoNames => {
+            return `<li class="search-form__item"><a class="search-form__link" href=video.html${videoNames.video_url}>${videoNames.video_title}</a></li>`;
+        }).slice(0, 10);
+
+        $(".search-form__options").html(this.value ? html : null);
+
+        if ($(".search-form__options .search-form__item").length == 0) {
+            $(".search-form__options").css("display", "none");
+        } else {
+            $(".search-form__options").css("display", "block");
+        }
+    }
+
+    if ($(".search-form__options .search-form__item").length == 0) {
+        $(".search-form__options").css("display", "none");
+    }
+
+    $(".search-form__input").change(displayOptions);
+    $(".search-form__input").keyup(displayOptions);
+
+    fetch(url)
+    .then(response => response.json())
+    .then(json => {
+        json.forEach(el => {
+            videoNames.push(el);
+        });
+
+        console.log(videoNames);
+        console.log(getOptions("sav", videoNames));
+    });
 });
