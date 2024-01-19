@@ -76,7 +76,7 @@ $(document).ready(function() {
 
 
     // TEMPLATE CONTENT
-    let url = "../database/listVideo.json";
+    let url = "https://filippov-nikolay.github.io/amtlis/database/listVideo.json";
     let template = document.querySelector("#template");
 
     // PAGE CATEGORIES
