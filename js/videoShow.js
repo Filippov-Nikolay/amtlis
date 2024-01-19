@@ -28,7 +28,7 @@ $(document).ready(function() {
     console.log(getUrl);
 
 
-    let url = "../database/listVideo.json";
+    let url = "https://filippov-nikolay.github.io/amtlis/database/listVideo.json";
     let template = document.querySelector("#template");
     let template1 = document.querySelector("#template1");
     let template2 = document.querySelector("#commentTemplate");
