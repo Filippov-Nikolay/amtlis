@@ -177,6 +177,8 @@
     margin: 0 auto;
 }
 .search-form {
+    position: relative;
+
     display: flex;
 
     justify-content: space-between;
@@ -227,6 +229,38 @@
 .search-form__svg {
     display: block;
 }
+
+.search-form__options {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    z-index: 2;
+
+    display: none;
+    padding: 15px 25px;
+
+    width: max-content;
+
+    border-radius: 10px;
+    background: linear-gradient(180deg, #000 -39.51%, #6486DB 445.8%);
+}
+.search-form__item {
+
+}
+.search-form__item:not(:last-child) {
+    margin-bottom: 15px;
+}
+.search-form__link {
+    padding: 2px 0;
+
+    font-size: 16px;
+
+    transition: all .5s ease;
+}
+.search-form__link:hover {
+    opacity: 0.5;
+}
+
 .input-voice {
     padding: 13px 16px;
     border-radius: 50px;
