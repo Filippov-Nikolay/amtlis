@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/video/styleVideo.css">
+    <link rel="stylesheet" href="css/video/adaptiveVideo.css">
 
     <title>AMTLIS</title>
 </head>
@@ -88,8 +89,9 @@
                             </div>
                             <!-- Кнопки взаимодействия с видео -->
                             <div class="metadata__item">
-                                <form class="metadata-review">
-                                    <button class="btn-metadata-review metadata-review__like" value="like">
+                                <div class="metadata-review">
+                                    <button class="btn-metadata-review metadata-review__like" value="like"
+                                        data-video-id="liked-quest">
                                         <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -98,7 +100,7 @@
                                         </svg>
                                         <p class="text-btn">15 884</p>
                                     </button>
-                                </form>
+                                </div>
 
                                 <button class="btn-metadata-review metadata-review__forward">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="white"
@@ -140,7 +142,7 @@
                             </div>
                         </div>
                         <!-- Описание видео -->
-                        <div class="secction__description description">
+                        <div class="secction__description description" id="contentWrapper">
                             <div class="section__always-shown always-shown">
                                 <!-- Просмотры и дата загрузки -->
                                 <div class="always-shown__item">
@@ -149,15 +151,16 @@
                                 </div>
                             </div>
                             <!-- Содержание видео -->
-                            <div class="section__content-wrapper" id="contentWrapper">
+                            <div class="section__content-wrapper">
                                 <p class="description__text">
                                     Веди мене в храм є україномовним перекладом відомої пісні Hozier «Take Me To
                                     Church»<br>
                                     від музиканта та співака з українського Маріуполя ENLEO Нікіти Леонтьєва.
+
                                 </p>
                                 <!-- Кнопка "Show More" -->
 
-                                <button class="btn-metadata-review metadata-review__more">
+                                <button class="btn-metadata-review metadata-review__showmore">
                                     <p class="text-btn">Show More</p>
                                     <svg width="18" height="10" viewBox="0 0 18 10" fill="white"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -223,8 +226,7 @@
                             <div class="section__block-add-comments">
                                 <div class="section__add-comments-wrapper">
                                     <a href="">
-                                        <img class="avatar-add-comments"
-                                            src="img/video__content/picturesChannel/Ellipse3-3.png" alt="">
+                                        <img class="avatar-add-comments" src="img/accounts/Avatar.jpg" alt="">
                                     </a>
                                     <div class="add-comment-block">
                                         <textarea id="add-comment-input" placeholder="Add a public comment"></textarea>
@@ -255,7 +257,7 @@
                                         </div>
                                     </div>
                                     <div class="btn-add-comment">
-                                        <button>
+                                        <button id="add-comment-btn">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
                                                 viewBox="0 0 26 26" fill="none">
                                                 <path
@@ -267,11 +269,46 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="section_users-comments">
-                            <div class="section_main-comments">
+                        <template id="commentTemplate">
+                            <li class="section__main-comments">
+                                <a href="">
+                                    <img class="avatar-channel" src="img/accounts/Avatar.jpg" alt="">
+                                </a>
+                                <div class="comments-block">
+                                    <div class="info-commments">
+                                        <div class="main-info">
+                                            <div class="info__comments-channel">
+                                                <h2 class="title-channel">
+                                                    Kristen
+                                                </h2>
+                                                <h4 class="upload-comments">
+                                                    3 weeks ago
+                                                </h4>
+                                            </div>
+                                            <h5 class="title-commments">
+                                                Очень, очень нравится эта композиция в вашем исполнении!!!! Очень
+                                                хочется узнать о вашей дальнейшей работе. Удачи вам в вашей
+                                                творческой
+                                                работе!!!
+                                            </h5>
+                                        </div>
+                                        <div class="buttons-comments">
+                                            <button class="btn-comments">
+                                                <p class="text-btn">
+                                                    Answer
+                                                </p>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </template>
+                        <div class="section__users-comments" id="commentsContainer">
+                            <ul class="list__users-comments">
 
-                            </div>
+                            </ul>
                         </div>
+
                     </div>
                 </div>
             </div>

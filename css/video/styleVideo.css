@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-metadata-review
+section__from-channel
 img {
     display: block;
     max-width: 100%;
@@ -49,7 +49,7 @@ a {
     border-radius: 12px;
     overflow: hidden;
 
-    /* background: url(img/TheEqualizer3.jpg) no-repeat center /cover; */
+
 }
 
 
@@ -107,7 +107,8 @@ a {
     transition: all .5s;
     cursor: pointer;
 }
-.btn-subscribers:hover {
+.btn-subscribers:hover,
+.btn-subscribers.active {
     color: var(--color-text-button-hover);
     background-color: var(--bg-button-hover);
 }
@@ -115,18 +116,7 @@ a {
 .metadata-review img {
     max-width: 24px;
 }
-.btn-metadata-review {
-    position: relative;
-    display: flex;
-    align-items: center;
-    margin-left: 25px;
-    padding: 6px 10px;
-    border-radius: 18px;
-    transition: all .5s;
-}
-.btn-metadata-review:hover {
-    background-color: var(--bg-button-hover);
-}
+
 
 .metadata-review__like {
 }
@@ -163,6 +153,7 @@ a {
     color: var(--color-text);
 }
 
+
 .secction__description {
     width: 1451px;
     height: 102px;
@@ -193,24 +184,61 @@ a {
 .item:not(:last-child){
   margin-right: 15px;
 }
-.description__text {
-}
+
 
 .section__content-wrapper{
-    display: flex; 
-    margin: 10px 0 10px 0; 
+    display: flex;
+    margin: 10px 0 10px 0;
     justify-content: space-between;
-    overflow: hidden; /* скрываем все, что выходит за границы */
-    transition: max-height 0.5s ease; /* добавляем анимацию */
-    max-height: 100px; /* начальная высота, скажем, 100px */
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    max-height: 100px;
 }
 
-.expanded {
-    max-height: 500px; /* высота, когда секция раскрыта */
-  }
+
+.section__content-wrapper.expanded {
+    max-height: 100%;
+}
+
+.description__text {
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.btn-metadata-review {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    padding: 6px 10px;
+    border-radius: 18px;
+    transition: all .5s;
+}
+.btn-metadata-review:hover,
+.btn-metadata-review.active  {
+    background-color: var(--bg-button-hover);
+}
+
+
+
+.metadata-review__showmore{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    padding: 6px 10px;
+    border-radius: 18px;
+    transition: all .5s;
+}
+
+.metadata-review__showmore svg {
+    margin-left: 10px;
+}
 
 .section__from-channel{
-    width: 344px;
+    width: 25.10%;
     height: 609px;
     border-radius: 10px;
     background: var(--gradient-blue, linear-gradient(180deg, #6486DB -19.87%, #090909 100%));
@@ -387,7 +415,7 @@ a {
 
 .section__add-comments{
     width: 1451px;
-    height: 1604px;
+    height: 83.54%;
     margin-top: 50px;
 }
 
@@ -423,25 +451,34 @@ a {
 .avatar-add-comments{
     width: 60px;
     height: 60px;
+    border-radius: 25px;
+    align-self: flex-start;
 }
 
 .add-comment-block {
     display: flex;
-    height: 33.565px;
+    flex-direction: column; 
+    height: auto; 
     align-items: flex-start;
-    gap: 695px;
+   
     position: relative;
 }
 
 textarea {
     resize: none;
-    width: 75em;
+    width: 65em;
     background-color: var(--bg-color);
     border: none;
     border-bottom: 1px solid var(--bg-color-border);
     outline: none;
     color: var(--color-text-btn);
     position: relative;
+    
+    transition: height 0.5s ease;
+}
+
+textarea.autoresize {
+    height: auto; 
 }
 
 textarea:focus {
@@ -455,7 +492,7 @@ textarea::placeholder {
 
 .options-menu{
     position: absolute;
-    
+    top: 100%;
     right: 0;
     display: flex;
     align-items: flex-start;
@@ -483,7 +520,8 @@ textarea::placeholder {
 .btn-add-comment{
     display: flex;
     padding: 17px;
-    align-items: flex-start;
+    align-items: flex-end;
+    margin-top: auto;
     gap: 15px;
     border-radius: 100px;
     background: var(--white-10, rgba(217, 217, 217, 0.10));
@@ -494,17 +532,93 @@ textarea::placeholder {
     background-color: var(--bg-color-border);
 }
 
-.section_users-comments{
+.section__users-comments{
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 5px;
+    margin-top: 15px;
+    margin-left: 80px;
 }
 
-.section_main-comments{
+.section__main-comments{
     display: flex;
-    padding: 20px 0px;
+
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.comments-block{
+
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
+    gap: 13px;
+}
+
+.info-commments{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 13px;
+}
+
+.main-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     gap: 10px;
 }
+
+.buttons-comments{
+    display: flex;
+    align-items: center;
+    align-self: flex-end;
+    gap: 10px;
+}
+
+.btn-comments{
+    padding: 6px 10px;
+    border-radius: 18px;
+    transition: all .5s;
+    position: relative;
+}
+
+.btn-comments:hover,
+.btn-comments.active  {
+    background-color: var(--bg-button-hover);
+}
+
+.info__comments-channel{
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.title-commments{
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 15.6px */
+    overflow-wrap: break-word;
+
+    max-width: 696px;
+}
+
+.title-channel{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 19.2px */
+
+
+}
+
+.upload-comments{
+    color: var(--grey, rgba(255, 255, 255, 0.70));
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 15.6px */
+}
+

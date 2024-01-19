@@ -87,14 +87,18 @@ $(document).ready(function() {
     let param = (new URL(document.location).searchParams);
     let channelParam = param.get("channel");
     // console.log(param.get("channel"));
+
+    if ((!channelParam || channelParam.trim() === "")) {
+        window.location.href = "index.html";
+    }
     
     console.log(getUrl);
-    
+
 
     let url = "../database/listVideo.json";
     let template = document.querySelector("#template");
     let template1 = document.querySelector("#template1");
-
+    let template2 = document.querySelector("#commentTemplate");
 
 
     fetch(url)
@@ -103,6 +107,7 @@ $(document).ready(function() {
             let size = json.length;
             let top_videos_from_channel = document.querySelector("#top_videos_from_channel .list__video-from-channel");
             let top_recommendation_videos = document.querySelector("#top_recommendation_videos .list__wrapper-recommendation-video");
+            let comments_Container = document.querySelector("#commentsContainer .list__users-comments");
            
             //подгружение видоса
             for (let i = 0; i < size; i++) {
@@ -120,12 +125,16 @@ $(document).ready(function() {
                     break;
                 }
             }
+
+
+
+            
             
             
             //подгружение видосов из канала
             for(let i = 0; i< size; i++) {
                 let tempURL = json[i].video_url;
-                console.log(tempURL.indexOf("channel"));
+                // console.log(tempURL.indexOf("channel"));
                 let f = false;
                 let jsonChannel = "";
 
@@ -145,11 +154,11 @@ $(document).ready(function() {
                     }
                 }
 
-                console.log(jsonChannel);
+                // console.log(jsonChannel);
 
                 if(jsonChannel.indexOf(channelParam) != -1) {
-                    console.log("AGA!!!!");
-                    console.log(json[i]);
+                    // console.log("AGA!!!!");
+                    // console.log(json[i]);
 
                     if (getUrl !== json[i].video_url) {
                         let templateClone = template.content.cloneNode(true);
@@ -159,15 +168,11 @@ $(document).ready(function() {
                         templateClone.querySelector(".text-channel-name").innerHTML = json[i].channel_title;
                         templateClone.querySelector(".video-text-wrapper").setAttribute("href", `video.html${json[i].video_url}`);
                         
-
-                        for (let j = 0; j < json[i].video_url.length; j++) {
-                                top_videos_from_channel.append(templateClone);
-                                break;
-                        }
+                        top_videos_from_channel.append(templateClone);
                     }
                 }
                 else{
-                    console.log("NO!!!!");
+                    // console.log("NO!!!!");
                 }
 
             }
@@ -194,16 +199,56 @@ $(document).ready(function() {
 
             top_recommendation_videos.append(templateClone);
         });
+
+
+
+        let uniqueChannels = new Set();
+
+        randomIndices.forEach(index => {
+
+            let channelTitle = json[index].channel_title;
+
+            if (!uniqueChannels.has(channelTitle)) {
+                uniqueChannels.add(channelTitle);
+
+            let templateClone = template2.content.cloneNode(true);
+
+            templateClone.querySelector('.avatar-channel').src = json[index].channel_image_title;
+            templateClone.querySelector('.title-channel').textContent = json[index].channel_title;
+            templateClone.querySelector('.upload-comments').textContent = json[index].video_age;
+            templateClone.querySelector('.title-commments').textContent = json[index].comment_title;
+
+            comments_Container.appendChild(templateClone);
+            }
+        });
             
     });
 
-
     
 
-    //from main.js copy(sorry Kristina for copy)
+    $(".btn-metadata-review.metadata-review__like").click(function () {
+        $(this).toggleClass('active');
+    });
+
+    $(".btn-subscribers").click(function () {
+        $(this).toggleClass('active');
+    });
+    
+
+    $('#add-comment-input').on('input', function () {
+        $(this).css('height', 'auto');
+        $(this).css('height', this.scrollHeight + 'px');
+    
+        let textareaHeight = this.scrollHeight;
+        $('.section__users-comments').css('margin-top', textareaHeight + 'px');
+    });
+
+
 
     function formatNumber(viewsCount) {
-        if (viewsCount >= 1000 && viewsCount <= 9000) {
+        if (viewsCount < 1000){
+            return `${viewsCount} `;
+        }else if (viewsCount <= 9000) {
             return `${viewsCount.substring(0, 1)}K `;
         } else if (viewsCount <= 99000) {
             return `${viewsCount.substring(0, 2)}K `;
@@ -223,9 +268,41 @@ $(document).ready(function() {
             return `${viewsCount} `;
         }
     }
+
+    $('#add-comment-btn').on('click', function () {
+        let commentText = $('#add-comment-input').val();
+        if (commentText.trim() !== '') {
+            // Клонируем шаблон
+            let commentTemplate = document.getElementById('commentTemplate');
+            let commentClone = document.importNode(commentTemplate.content, true);
+
+            // Заполняем клонированный элемент данными
+            commentClone.querySelector('.title-channel').textContent = 'Filippov and Shvets';  // Замените на ваше имя пользователя
+            commentClone.querySelector('.upload-comments').textContent = 'Just now';  // Замените на время комментария
+            commentClone.querySelector('.title-commments').textContent = commentText;
+
+            // Добавляем клонированный элемент в начало списка комментариев
+            $('#commentsContainer ul').prepend(commentClone);
+            
+            // Очищаем поле ввода
+            $('#add-comment-input').val('');
+            
+            // Сбрасываем высоту textarea и отступ у блока комментариев
+            $('#add-comment-input').css('height', 'auto');
+            $('.section__users-comments').css('margin-top', '0');
+        }
     });
 
 
+    $('.btn-comments-sub').on('click', function () {
+        $('.comments-sub').toggleClass('hidden');
+        $(this).toggleClass('active');
+    });
+
+    });
+
+
+    
 /*
  ◦ скачать все видео из канала
  ◦ добавить iframe

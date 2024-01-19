@@ -1,0 +1,63 @@
+@media screen and (max-width: 1900px) {
+
+
+    .section__from-channel{
+        width:  555px;
+    }
+    .secction__description{
+        width: 25.52%;
+    }
+
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    .section__from-channel{
+        width:  655px;
+    }
+    
+}
+
+@media screen and (max-width: 1199px) {
+
+
+
+    .secction__description{
+        width: 1255px;
+    }
+
+    .section__from-channel{
+       display: none;
+    }
+
+    .section__video{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .container {
+		width: 720px;
+
+	}
+
+
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+		width: 540px;
+
+    
+	}
+}
+
+@media screen and (max-width: 575px) {
+    .container {
+		padding: 0 10px;
+		width: 90%;
+
+       
+	}
+}
