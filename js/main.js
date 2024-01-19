@@ -106,6 +106,10 @@ $(document).ready(function() {
             return `${viewsCount} views`;
         }
     }
+    // function formatTime(date) {
+    //     const dateNow = new Date();
+
+    // }
 
     if (template != null) {
         let templateClone = template.content.cloneNode(true);

@@ -1,13 +1,13 @@
 $(document).ready(function() {
-
-    
     // Делаем AJAX-запрос к index.html
     $.ajax({
         url: 'index.html',
         type: 'GET',
         dataType: 'html',
         success: function(data) {
-            let header = $($(data).find("header").prevObject[15]);
+            let header = $($(data))[19];
+            console.log(header);
+
             $(".header").html($(header).html() + "<script src='js/main.js'></script>");
         },
         error: function() {
