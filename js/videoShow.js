@@ -7,21 +7,13 @@ $(document).ready(function() {
         success: function(data) {
             let indexHtml = Object.values($(data));
 
-            console.log(indexHtml);
-            console.log(indexHtml.indexOf("header.header"));
-
-            for (let i = 0; i < Object.values($(indexHtml)).length; i++) {
+            for (let i = 0; i < indexHtml.length; i++) {
                 if ($(indexHtml[i]).hasClass("header")) {
                     console.log(i, ">>>", indexHtml[i]);
                     $(".header").html($(indexHtml[i]).html() + "<script src='js/main.js'></script>");
                     break;
                 }
             }
-
-            // let header = $($(data))[19];
-            // console.log(header);
-
-            // $(".header").html($(header).html() + "<script src='js/main.js'></script>");
         },
         error: function() {
             console.log('Не удалось загрузить index.html');
