@@ -1,4 +1,9 @@
 console.log("test request");
+for (let i = 1; i <= $(".canvas-decor__span").length; i++) {
+    $(`.canvas-decor__span-${i}`).removeAttr("style");
+}
+$(".banner__info").css("opacity", 1);
+$(".slider-nav").css("opacity", 1);
 
 $(document).ready(function() {
     // HEADER-MENU
@@ -335,11 +340,7 @@ $(document).ready(function() {
 
     // ANIMATION
     function returnStyle() {
-        for (let i = 1; i <= $(".canvas-decor__span").length; i++) {
-            $(`.canvas-decor__span-${i}`).removeAttr("style");
-        }
-        $(".banner__info").css("opacity", 1);
-        $(".slider-nav").css("opacity", 1);
+        
     }
     
     $(".banner__btn").click(function () {
