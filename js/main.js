@@ -1,3 +1,5 @@
+console.log("test request");
+
 $(document).ready(function() {
     // HEADER-MENU
     function showMenu () {
