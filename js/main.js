@@ -127,31 +127,33 @@ $(document).ready(function() {
     
             for (let i = 0; i < size; i++) {
                 templateClone = template.content.cloneNode(true);
-    
-                templateClone.querySelector(".video-img img").setAttribute("src", json[i].path_to_video_photo);
-                templateClone.querySelector(".channel__link-img").setAttribute("src", json[i].channel_image_title);
-                templateClone.querySelector(".link__video").setAttribute("href", `video.html${json[i].video_url}` );
-                templateClone.querySelector(".name-video__link").innerHTML = json[i].video_title;
-                templateClone.querySelector(".channel-name__link").innerHTML = json[i].channel_title;
-                templateClone.querySelector(".video-content__number-views").innerHTML = formatNumber(String(json[i].views_count));
-                templateClone.querySelector(".video-content__metadata").innerHTML = json[i].video_age;
-    
-                for (let j = 0; j < json[i].category.length; j++) {
-                    if (json[i].category[j] == "top_10_for_the_week") {
-                        top_10_for_the_week.append(templateClone);
-                        console.log(1);
-                    } else if (json[i].category[j] == "continue_watching") {
-                        continue_watching.append(templateClone);
-                        console.log(2);
-                    } else if (json[i].category[j] == "popular") {
-                        popular.append(templateClone);
-                        console.log(3);
-                    } else if (json[i].category[j] == "all") {
-                        all.append(templateClone);
-                        console.log(4);
+                
+                if (templateClone.querySelector(".video-img img")) {
+                    templateClone.querySelector(".video-img img").setAttribute("src", json[i].path_to_video_photo);
+                    templateClone.querySelector(".channel__link-img").setAttribute("src", json[i].channel_image_title);
+                    templateClone.querySelector(".link__video").setAttribute("href", `video.html${json[i].video_url}` );
+                    templateClone.querySelector(".name-video__link").innerHTML = json[i].video_title;
+                    templateClone.querySelector(".channel-name__link").innerHTML = json[i].channel_title;
+                    templateClone.querySelector(".video-content__number-views").innerHTML = formatNumber(String(json[i].views_count));
+                    templateClone.querySelector(".video-content__metadata").innerHTML = json[i].video_age;
+                
+                    for (let j = 0; j < json[i].category.length; j++) {
+                        if (json[i].category[j] == "top_10_for_the_week") {
+                            top_10_for_the_week.append(templateClone);
+                            console.log(1);
+                        } else if (json[i].category[j] == "continue_watching") {
+                            continue_watching.append(templateClone);
+                            console.log(2);
+                        } else if (json[i].category[j] == "popular") {
+                            popular.append(templateClone);
+                            console.log(3);
+                        } else if (json[i].category[j] == "all") {
+                            all.append(templateClone);
+                            console.log(4);
+                        }
                     }
+                    // content[0].append(templateClone);
                 }
-                // content[0].append(templateClone);
             }
         });
     }

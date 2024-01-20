@@ -5,10 +5,23 @@ $(document).ready(function() {
         type: 'GET',
         dataType: 'html',
         success: function(data) {
-            let header = $($(data))[19];
-            console.log(header);
+            let indexHtml = Object.values($(data));
 
-            $(".header").html($(header).html() + "<script src='js/main.js'></script>");
+            console.log(indexHtml);
+            console.log(indexHtml.indexOf("header.header"));
+
+            for (let i = 0; i < Object.values($(indexHtml)).length; i++) {
+                if ($(indexHtml[i]).hasClass("header")) {
+                    console.log(i, ">>>", indexHtml[i]);
+                    $(".header").html($(indexHtml[i]).html() + "<script src='js/main.js'></script>");
+                    break;
+                }
+            }
+
+            // let header = $($(data))[19];
+            // console.log(header);
+
+            // $(".header").html($(header).html() + "<script src='js/main.js'></script>");
         },
         error: function() {
             console.log('Не удалось загрузить index.html');
@@ -16,7 +29,7 @@ $(document).ready(function() {
     });
 
     let getUrl = window.location.search;
-    
+
     let param = (new URL(document.location).searchParams);
     let channelParam = param.get("channel");
     // console.log(param.get("channel"));
@@ -24,7 +37,7 @@ $(document).ready(function() {
     if ((!channelParam || channelParam.trim() === "")) {
         window.location.href = "index.html";
     }
-    
+
     console.log(getUrl);
 
 
@@ -61,9 +74,7 @@ $(document).ready(function() {
 
 
 
-            
-            
-            
+
             //подгружение видосов из канала
             for(let i = 0; i< size; i++) {
                 let tempURL = json[i].video_url;
@@ -118,7 +129,7 @@ $(document).ready(function() {
                     }
                 }
 
-           
+
             randomIndices.forEach(index => {
             let templateClone = template1.content.cloneNode(true);
 
