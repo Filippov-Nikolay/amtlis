@@ -10,7 +10,11 @@
     margin-left: auto;
     padding: 25px 50px;
 
-    overflow: hidden;
+    overflow: auto;
+    scroll-behavior: auto;
+}
+.category__wrapper::-webkit-scrollbar {
+    height: 0px;
 }
 .category__wrapper::after {
     content: '';
