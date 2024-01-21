@@ -98,9 +98,10 @@ $(document).ready(function() {
                 templateClone = template.content.cloneNode(true);
                 
                 if (templateClone.querySelector(".video-img img")) {
+                    templateClone.querySelector(".link__video").setAttribute("onclick", `window.location='video.html${json[i].video_url}'`);
                     templateClone.querySelector(".video-img img").setAttribute("src", json[i].path_to_video_photo);
                     templateClone.querySelector(".channel__link-img").setAttribute("src", json[i].channel_image_title);
-                    templateClone.querySelector(".link__video").setAttribute("href", `video.html${json[i].video_url}` );
+                    // templateClone.querySelector(".link__video").setAttribute("href", `video.html${json[i].video_url}` );
                     templateClone.querySelector(".name-video__link").innerHTML = json[i].video_title;
                     templateClone.querySelector(".channel-name__link").innerHTML = json[i].channel_title;
                     templateClone.querySelector(".video-content__number-views").innerHTML = formatNumber(String(json[i].views_count));

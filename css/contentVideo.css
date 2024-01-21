@@ -30,10 +30,12 @@
 }
 .video__item {
     /* width: min-content; */
-    /* max-width: min-content; */
+    max-width: min-content;
 }
 .link__video {
     /* margin-bottom: 10px; */
+
+    cursor: pointer;
 }
 .link__video img {
     width: 100%;
