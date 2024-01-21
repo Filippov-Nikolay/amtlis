@@ -98,7 +98,8 @@ $(document).ready(function() {
                 templateClone = template.content.cloneNode(true);
                 
                 if (templateClone.querySelector(".video-img img")) {
-                    templateClone.querySelector(".link__video").setAttribute("onclick", `window.location='video.html${json[i].video_url}'`);
+                    templateClone.querySelector(".link__video").setAttribute("data-link-video", `video.html${json[i].video_url}`);
+                    // templateClone.querySelector(".link__video").setAttribute("onclick", `window.location='video.html${json[i].video_url}'`);
                     templateClone.querySelector(".video-img img").setAttribute("src", json[i].path_to_video_photo);
                     templateClone.querySelector(".channel__link-img").setAttribute("src", json[i].channel_image_title);
                     // templateClone.querySelector(".link__video").setAttribute("href", `video.html${json[i].video_url}` );
@@ -248,8 +249,9 @@ $(document).ready(function() {
 
     // LOCAL STORAGE
     $(document).on("click", ".link__video", function() {
-        console.log("TRUE");
-        localStorage.setItem("URL", $(".link__video").attr("href"));
+        console.log("TRUE", $(this).data("link-video"));
+        window.location.href = $(this).data("link-video");
+        // localStorage.setItem("URL", $(".link__video").attr("href"));
     });
 
 
