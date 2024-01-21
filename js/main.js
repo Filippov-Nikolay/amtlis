@@ -1,10 +1,3 @@
-console.log("test request");
-for (let i = 1; i <= $(".canvas-decor__span").length; i++) {
-    $(`.canvas-decor__span-${i}`).removeAttr("style");
-}
-$(".banner__info").css("opacity", 1);
-$(".slider-nav").css("opacity", 1);
-
 $(document).ready(function() {
     // HEADER-MENU
     function showMenu () {
@@ -339,10 +332,16 @@ $(document).ready(function() {
 
 
     // ANIMATION
-    function returnStyle() {
-        
-    }
-    
+
+    // Это событие срабатывает перед тем, как страница будет выгружена
+    window.addEventListener('beforeunload', function() {
+        for (let i = 1; i <= $(".canvas-decor__span").length; i++) {
+            $(`.canvas-decor__span-${i}`).removeAttr("style");
+        }
+        $(".banner__info").css("opacity", 1);
+        $(".slider-nav").css("opacity", 1);
+    });
+
     $(".banner__btn").click(function () {
         for (let i = 1; i <= $(".canvas-decor__span").length; i++) {
             $(`.canvas-decor__span-${i}`).css("height", 0);
@@ -353,7 +352,6 @@ $(document).ready(function() {
     $(".banner__btn").click(function () {
         let href = $(this).attr('href');
         setTimeout(function() {window.location = href;}, 800);
-        setTimeout(function() {returnStyle();}, 900);
         return false;
     });
 
