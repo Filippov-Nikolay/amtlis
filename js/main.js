@@ -333,14 +333,19 @@ $(document).ready(function() {
 
     // ANIMATION
 
-    // Это событие срабатывает перед тем, как страница будет выгружена
-    window.addEventListener('beforeunload', function() {
+    // Срабатывает, когда веб-страница отображается, включая случаи, когда она загружается из кэша
+    window.addEventListener('pageshow', function(event) {
         for (let i = 1; i <= $(".canvas-decor__span").length; i++) {
             $(`.canvas-decor__span-${i}`).removeAttr("style");
         }
         $(".banner__info").css("opacity", 1);
         $(".slider-nav").css("opacity", 1);
     });
+
+    // Это событие срабатывает перед тем, как страница будет выгружена
+    // window.addEventListener('beforeunload', function() {
+        
+    // });
 
     $(".banner__btn").click(function () {
         for (let i = 1; i <= $(".canvas-decor__span").length; i++) {
