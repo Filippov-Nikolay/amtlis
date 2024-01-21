@@ -274,7 +274,7 @@ $(document).ready(function() {
     }
     bannerContent($(".banner__item.slick-current").on(".banner__item .slick-current").data("link"));
 
-    $(".banner__about").on("click", ".slick-arrow", function() {
+    function bannerAnimation() {
         $(".banner__video-info").css("opacity", 0);
         $(".banner__title").css("opacity", 0);
         
@@ -285,19 +285,11 @@ $(document).ready(function() {
             $(".banner__video-info").css("opacity", 1);
             $(".banner__title").css("opacity", 1);
         }, 300);
-    });
-    $(".banner__item").click(function() {
-        $(".banner__video-info").css("opacity", 0);
-        $(".banner__title").css("opacity", 0);
+    }
 
-        setTimeout(() => {
-            bannerContent($(this).on(".slick-current").data("link"));
-        }, 300);
-        setTimeout(() => {
-            $(".banner__video-info").css("opacity", 1);
-            $(".banner__title").css("opacity", 1);
-        }, 300);
-    });
+    $(".banner__about").on("click", ".slick-arrow", bannerAnimation);
+    $(".slider-nav").on("touchend", bannerAnimation);
+    $(".slick-track").click(bannerAnimation);
 
 
     // ANIMATION
