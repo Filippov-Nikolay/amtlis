@@ -36,9 +36,6 @@
     .video-about {
         grid-template-columns: repeat(3, 1fr);
     }
-    .search-form {
-        width: 100%;
-    }
     #canvas__btn {
         display: none;
         bottom: 55px;
@@ -68,6 +65,9 @@
         /* background-color: purple; */
 	}
 
+    .search-form {
+        width: 100%;
+    }
     .video-about {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -80,7 +80,23 @@
         /* background-color: orange; */
 	}
     .header__form {
-        display: none;
+        position: absolute;
+        right: 0;
+
+        /* width: 100%; */
+    }
+    .search-form {
+        /* width: min-content; */
+        
+        margin: 0;
+        margin-left: auto;
+        
+        width: 92px;
+        justify-content: center;
+        /* overflow: hidden; */
+    }
+    .search-form__options {
+        max-width: 100%;
     }
     .header-right-bar__link:not(.header-right-bar__avatar, .header-right-bar__search) {
         display: none;
@@ -99,6 +115,7 @@
     }
     .video-about {
         grid-template-columns: repeat(1, 1fr);
+        width: auto;
     }
     .video__item {
         max-width: none;
@@ -118,6 +135,14 @@
 
         /* background-color: pink; */
 	}
+    .search-form {
+        width: 45px;
+
+        padding: 5px 10px;
+    }
+    .header__input-voice {
+        margin-left: 5px;
+    }
     .canvas__btn-wrapper {
         flex-direction: column;
     }
@@ -155,5 +180,5 @@
     }
     .banner__video-name {
         width: 100%;
-    }    
+    }
 }

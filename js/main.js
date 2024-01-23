@@ -33,6 +33,38 @@ $(document).ready(function() {
     });
 
 
+    // SEARCH
+    function removeStyle() {
+        $(".search-form__btn").removeClass("search-form__btn--active");
+        $(".search-form").removeAttr("style");
+        $(".logo").removeAttr("style");
+        $(".header__burger").removeAttr("style");
+        setTimeout(() => {
+            $(".header__form").removeAttr("style");
+        }, 400);
+    }
+
+    window.addEventListener('resize',(e) => {
+        if (window.innerWidth > 767 && $(".search-form__btn").hasClass("search-form__btn--active")) {
+            removeStyle();
+        }
+    });
+
+    $(".search-form__btn").click(function () {
+        if (window.innerWidth < 767) {
+            if ($(".search-form__btn").hasClass("search-form__btn--active")) {
+                removeStyle();
+            } else {
+                $(".search-form__btn").addClass("search-form__btn--active");
+                $(".search-form").css("width", "100%");
+                $(".logo").css("opacity", "0");
+                $(".header__burger").css("opacity", "0");
+                $(".header__form").css("width", "100%");
+            }
+        }
+    });
+
+
     // RIGHT BAR
     $(".header-right-bar__link").click(function () {
         if ($(this).hasClass("header-right-bar__link--active")) {

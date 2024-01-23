@@ -12,6 +12,8 @@
 .container {
 }
 .nav {
+    position: relative;
+
     display: flex;
 
     align-items: center;
@@ -23,6 +25,8 @@
 .burger {
     position: relative;
     cursor: pointer;
+
+    transition: all .5s ease;
 }
 
 .burger:after {
@@ -161,6 +165,7 @@
    align-items: center;
 
    color: #fff;
+   transition: all .5s ease;
 }
 .logo__svg {
     margin-right: 5px;
@@ -172,6 +177,8 @@
     font-size: 25px;
 }
 .header__form {
+    position: relative;
+
     display: flex;
 
     margin: 0 auto;
@@ -191,8 +198,13 @@
 
     border-radius: 50px;
     border: 0.5px solid var(--bg-color-border);
+    background-color: var(--bg-color);
+
+    transition: all .5s ease;
 }
 .search-form__input {
+    padding: 0;
+
     width: 100%;
     color: var(--color-text);
 }
@@ -232,17 +244,20 @@
 
 .search-form__options {
     position: absolute;
-    top: 45px;
-    left: 0;
+    top: 50px;
+    left: 50%;
     z-index: 2;
 
     display: none;
+    
     padding: 15px 25px;
-
+    
     width: max-content;
-
+    
     border-radius: 10px;
     background: linear-gradient(180deg, #000 -39.51%, #6486DB 445.8%);
+
+    transform: translateX(-50%);
 }
 .search-form__item {
 

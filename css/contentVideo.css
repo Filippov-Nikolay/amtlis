@@ -2,12 +2,20 @@
     margin-top: 25px;
     padding-bottom: 60px;
 }
-.video-about {
+/* .video-about {
     display: inline-grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 30px 15px;
 
     margin-bottom: 25px;
+} */
+.video-about {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px 15px;
+    margin-bottom: 25px;
+
+    width: fit-content;
 }
 
 .video__title {
