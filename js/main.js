@@ -3,9 +3,11 @@ $(document).ready(function() {
     function showMenu () {
         $(".left-bar").show();
         $(".left-bar").css("transform", "translateX(0)");
+        $("body").css("overflow", "hidden");
     }
     function hideMenu() {
         $(".left-bar").css("transform", "translateX(-100%)");
+        $("body").removeAttr("style");
 
         setTimeout(() => {
             $(".left-bar").hide();
