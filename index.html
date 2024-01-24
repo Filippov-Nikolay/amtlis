@@ -7,7 +7,7 @@
 
     <meta property="og:og:site_name" content="AMTLIS">
     <meta property="og:image" content="img/lg-amtlis.png">
-    <meta property="og:url" content="https://filippov-nikolay.github.io/amtlis/index.html"/>
+    <meta property="og:url" content="https://filippov-nikolay.github.io/amtlis/index.html">
 
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
@@ -20,7 +20,7 @@
 
 <body>
     <!-- HEADER -->
-    <header class="header">
+    <header id="header" class="header">
         <div class="container">
             <!-- left-bar -->
             <div class="left-bar">
@@ -166,8 +166,8 @@
                                 </a>
                             </li>
                         </ul>
+                        <h2 class="left-bar__title">Subscriptions</h2>
                         <ul class="left-bar__menu">
-                            <h2 class="left-bar__title">Subscriptions</h2>
                             <li class="left-bar__item">
                                 <a href="#" class="left-bar__link">
                                     <div class="left-bar__avatar">
@@ -209,8 +209,8 @@
                                 </a>
                             </li>
                         </ul>
+                        <h2 class="left-bar__title">Categories</h2>
                         <ul class="left-bar__menu">
-                            <h2 class="left-bar__title">Categories</h2>
                             <li class="left-bar__item">
                                 <a href="#" class="left-bar__link">
                                     <div class="left-bar__icon left-bar__icon--not-hover">
@@ -775,9 +775,9 @@
     </header>
 
     <!-- MAIN -->
-    <main class="main">
+    <main id="main" class="main">
         <!-- BANNER -->
-        <section class="section banner">
+        <section id="banner" class="section banner">
             <div class="banner__content">
                 <div class="banner__info">
                     <div class="banner__inner">
@@ -797,7 +797,7 @@
                             <!-- <button class="banner__btn">watch</button> -->
                             <a class="banner__btn" href="#">watch</a>
                             <ul class="banner__video-info video-info">
-                                <h3 class="banner__video-name">Enleo</h3>
+                                <li class="video-info__item"><h3 class="banner__video-name">Enleo</h3></li>
                                 <li class="video-info__item">5M VIEWS</li>
                                 <li class="video-info__item">6 DAY AGO</li>
                             </ul>
@@ -848,7 +848,7 @@
         </section>
 
         <!-- CATEGORY -->
-        <section class="section category">
+        <section id="category" class="section category">
             <div class="category__wrapper category__slider">
                 <button class="category__btn category__btn--active" value="all">all</button>
                 <button class="category__btn" value="music">music</button>
@@ -867,7 +867,7 @@
         </section>
 
         <!-- CONTENT-VIDEO -->
-        <section class="section video-content">
+        <section id="video-content" class="section video-content">
             <div class="container">
                 <!-- реализовать TEMPLATE -->
                 <!-- TO DO

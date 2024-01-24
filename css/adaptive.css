@@ -167,6 +167,9 @@
     .video-about {
         display: block;
     }
+    .video-info__item:first-child {
+        width: 100%;
+    }
     .video__item:not(:last-child) {
         margin-bottom: 30px;
     }

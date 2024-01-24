@@ -233,7 +233,7 @@
     display: flex;
     align-items: center;
 }
-.video-info__item::before {
+.video-info__item:not(:first-child)::before {
     content: '';
 
     display: block;

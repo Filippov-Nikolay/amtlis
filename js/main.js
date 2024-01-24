@@ -301,8 +301,8 @@ $(document).ready(function() {
                         // $(".banner__title").text = json[i].video_title;
                         document.querySelector(".banner__title").innerHTML = json[i].video_title;
                         document.querySelector(".banner__video-name").innerHTML = json[i].channel_title;
-                        document.querySelectorAll(".video-info__item")[0].innerHTML = formatNumber(String(json[i].views_count));
-                        document.querySelectorAll(".video-info__item")[1].innerHTML = json[i].video_age;
+                        document.querySelectorAll(".video-info__item")[1].innerHTML = formatNumber(String(json[i].views_count));
+                        document.querySelectorAll(".video-info__item")[2].innerHTML = json[i].video_age;
                         document.querySelector(".banner__btn").setAttribute("href", `video.html${json[i].video_url}`);
                         break;
                     }
