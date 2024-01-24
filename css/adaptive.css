@@ -151,12 +151,13 @@
         flex-direction: column;
     } */
     .banner__wrapper {
-        display: none;
+        /* display: none; */
 
         bottom: 153px;
-        left: 51px;
-
+        left: 50%;
         height: 30%;
+
+        transform: translateX(-110px);
     }
     .canvas-decor__span-6,
     .canvas-decor__span-7,
