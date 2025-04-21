@@ -1,1 +1,1 @@
-an unfinished project made by Shvets and Filippov!
+https://filippov-nikolay.github.io/amtlis/
